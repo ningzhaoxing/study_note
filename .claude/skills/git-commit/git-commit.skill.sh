@@ -111,34 +111,28 @@ get_default_remote_branch() {
 }
 
 # 交互式选择分支
-select_branch() {
+# 这个函数只处理分支选择逻辑，返回选中的分支名称
+# 所有的用户交互输出都在调用处处理
+select_branch_interactive() {
     local current_branch=$(git branch --show-current)
     local default_branch=$(get_default_remote_branch)
-
-    # 显示当前分支信息
-    echo -e "${BLUE}当前分支: ${GREEN}$current_branch${NC}"
 
     # 获取所有远程分支
     local remote_branches=$(git branch -r | grep -v "HEAD" | sed 's/origin\///' | sort | uniq)
 
     if [ -n "$remote_branches" ]; then
-        echo -e "${BLUE}可用的远程分支:${NC}"
+        # 显示分支列表
         local i=1
         local branch_array=()
 
         while IFS= read -r branch; do
             if [ -n "$branch" ]; then
-                local display_name="$branch"
-                if [ "$branch" = "$default_branch" ]; then
-                    display_name="$branch (默认)"
-                fi
-                echo "  $i) $display_name"
                 branch_array[$i]="$branch"
                 ((i++))
             fi
         done <<< "$remote_branches"
 
-        echo -e "${BLUE}选择要推送到的分支 (输入数字，默认为 $default_branch):${NC} "
+        # 读取用户选择
         read -r selection
 
         local selected_branch=""
@@ -146,29 +140,22 @@ select_branch() {
         if [ -z "$selection" ]; then
             if [ -n "$default_branch" ]; then
                 selected_branch="$default_branch"
-                echo -e "${GREEN}使用默认分支: $default_branch${NC}"
             else
                 selected_branch="$current_branch"
-                echo -e "${YELLOW}未选择分支，使用当前分支: $current_branch${NC}"
             fi
         elif [ -n "${branch_array[$selection]}" ]; then
             selected_branch="${branch_array[$selection]}"
-            echo -e "${GREEN}选择分支: $selected_branch${NC}"
         else
             if [ -n "$default_branch" ]; then
                 selected_branch="$default_branch"
-                echo -e "${YELLOW}无效的选择，使用默认分支: $default_branch${NC}"
             else
                 selected_branch="$current_branch"
-                echo -e "${YELLOW}无效的选择，使用当前分支: $current_branch${NC}"
             fi
         fi
 
-        # 返回纯净的分支名称（不带颜色代码）
         echo "$selected_branch"
         return 0
     else
-        echo -e "${YELLOW}没有找到远程分支，使用当前分支: $current_branch${NC}"
         echo "$current_branch"
         return 0
     fi
@@ -315,7 +302,50 @@ main() {
                     echo -e "${GREEN}推送到指定分支: $push_branch${NC}"
                 else
                     echo -e "${BLUE}确定推送目标分支...${NC}"
-                    push_branch=$(select_branch)
+
+                    local current_branch=$(git branch --show-current)
+                    local default_branch=$(get_default_remote_branch)
+
+                    echo -e "${BLUE}当前分支: ${GREEN}$current_branch${NC}"
+
+                    # 获取所有远程分支
+                    local remote_branches=$(git branch -r | grep -v "HEAD" | sed 's/origin\///' | sort | uniq)
+
+                    if [ -n "$remote_branches" ]; then
+                        echo -e "${BLUE}可用的远程分支:${NC}"
+                        local i=1
+
+                        while IFS= read -r branch; do
+                            if [ -n "$branch" ]; then
+                                local display_name="$branch"
+                                if [ "$branch" = "$default_branch" ]; then
+                                    display_name="$branch (默认)"
+                                fi
+                                echo "  $i) $display_name"
+                                ((i++))
+                            fi
+                        done <<< "$remote_branches"
+
+                        echo -e "${BLUE}选择要推送到的分支 (输入数字，默认为 $default_branch):${NC} "
+
+                        # 调用交互式选择函数
+                        push_branch=$(select_branch_interactive)
+
+                        if [ -z "$push_branch" ]; then
+                            if [ -n "$default_branch" ]; then
+                                push_branch="$default_branch"
+                                echo -e "${GREEN}使用默认分支: $default_branch${NC}"
+                            else
+                                push_branch="$current_branch"
+                                echo -e "${YELLOW}未选择分支，使用当前分支: $current_branch${NC}"
+                            fi
+                        else
+                            echo -e "${GREEN}选择分支: $push_branch${NC}"
+                        fi
+                    else
+                        echo -e "${YELLOW}没有找到远程分支，使用当前分支: $current_branch${NC}"
+                        push_branch="$current_branch"
+                    fi
                 fi
 
                 echo -e "${GREEN}推送到远程仓库 ($push_branch)...${NC}"
