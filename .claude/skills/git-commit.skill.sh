@@ -208,13 +208,23 @@ main() {
             # 推送到远程
             if [ "$do_push" = true ]; then
                 echo -e "${GREEN}推送到远程仓库...${NC}"
+
+                # 尝试推送
                 git push
 
-                if [ $? -eq 0 ]; then
-                    echo -e "${GREEN}✓ 推送成功${NC}"
+                # 如果推送失败，尝试设置上游分支
+                if [ $? -ne 0 ]; then
+                    echo -e "${YELLOW}尝试设置上游分支并推送...${NC}"
+                    git push --set-upstream origin $(git branch --show-current)
+
+                    if [ $? -eq 0 ]; then
+                        echo -e "${GREEN}✓ 推送成功（已设置上游分支）${NC}"
+                    else
+                        echo -e "${RED}✗ 推送失败${NC}"
+                        return 1
+                    fi
                 else
-                    echo -e "${RED}✗ 推送失败${NC}"
-                    return 1
+                    echo -e "${GREEN}✓ 推送成功${NC}"
                 fi
             fi
         else
