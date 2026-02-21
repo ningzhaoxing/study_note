@@ -3,17 +3,17 @@
   "title": "Write Git commit skill",
   "titleGenerationStatus": "success",
   "createdAt": 1771676963331,
-  "updatedAt": 1771677131711,
-  "lastResponseAt": 1771677131711,
+  "updatedAt": 1771677356995,
+  "lastResponseAt": 1771677356995,
   "sessionId": "8333b3ea-11ab-4604-9445-77ae543ffcf7",
   "sdkSessionId": "8333b3ea-11ab-4604-9445-77ae543ffcf7",
   "usage": {
     "model": "deepseek-chat",
-    "inputTokens": 94,
+    "inputTokens": 28,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 26688,
+    "cacheReadInputTokens": 35520,
     "contextWindow": 200000,
-    "contextTokens": 26782,
-    "percentage": 13
+    "contextTokens": 35548,
+    "percentage": 18
   }
 }
