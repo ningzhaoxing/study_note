@@ -246,7 +246,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 638
+    "width": 370
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -263,7 +263,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "5b60d3aeded81cd6",
+  "active": "18e26246bee7c376",
   "lastOpenFiles": [
     "GIT-COMMIT-README.md",
     "git-commit",

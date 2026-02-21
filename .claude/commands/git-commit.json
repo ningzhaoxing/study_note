@@ -1,0 +1,20 @@
+{
+  "name": "git-commit",
+  "description": "使用 git 将本地更改提交到远程仓库",
+  "script": ".claude/skills/git-commit.skill.sh",
+  "type": "bash",
+  "parameters": [
+    {
+      "name": "args",
+      "description": "git-commit 选项和参数",
+      "type": "string",
+      "optional": true
+    }
+  ],
+  "usage": "/git-commit [-a] [-m \"message\"] [-p] [-s] [-f] [-v] [-d]",
+  "examples": [
+    "/git-commit -a -m \"更新文档\" -p",
+    "/git-commit -s",
+    "/git-commit --help"
+  ]
+}
