@@ -115,6 +115,7 @@ select_branch() {
     local current_branch=$(git branch --show-current)
     local default_branch=$(get_default_remote_branch)
 
+    # 显示当前分支信息
     echo -e "${BLUE}当前分支: ${GREEN}$current_branch${NC}"
 
     # 获取所有远程分支
@@ -140,27 +141,32 @@ select_branch() {
         echo -e "${BLUE}选择要推送到的分支 (输入数字，默认为 $default_branch):${NC} "
         read -r selection
 
+        local selected_branch=""
+
         if [ -z "$selection" ]; then
             if [ -n "$default_branch" ]; then
+                selected_branch="$default_branch"
                 echo -e "${GREEN}使用默认分支: $default_branch${NC}"
-                echo "$default_branch"
-                return 0
             else
+                selected_branch="$current_branch"
                 echo -e "${YELLOW}未选择分支，使用当前分支: $current_branch${NC}"
-                echo "$current_branch"
-                return 0
+            fi
+        elif [ -n "${branch_array[$selection]}" ]; then
+            selected_branch="${branch_array[$selection]}"
+            echo -e "${GREEN}选择分支: $selected_branch${NC}"
+        else
+            if [ -n "$default_branch" ]; then
+                selected_branch="$default_branch"
+                echo -e "${YELLOW}无效的选择，使用默认分支: $default_branch${NC}"
+            else
+                selected_branch="$current_branch"
+                echo -e "${YELLOW}无效的选择，使用当前分支: $current_branch${NC}"
             fi
         fi
 
-        if [ -n "${branch_array[$selection]}" ]; then
-            echo -e "${GREEN}选择分支: ${branch_array[$selection]}${NC}"
-            echo "${branch_array[$selection]}"
-            return 0
-        else
-            echo -e "${YELLOW}无效的选择，使用默认分支: $default_branch${NC}"
-            echo "$default_branch"
-            return 0
-        fi
+        # 返回纯净的分支名称（不带颜色代码）
+        echo "$selected_branch"
+        return 0
     else
         echo -e "${YELLOW}没有找到远程分支，使用当前分支: $current_branch${NC}"
         echo "$current_branch"
