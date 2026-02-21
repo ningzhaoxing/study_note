@@ -1,0 +1,19 @@
+{
+  "id": "conv-1771638966240-8744gwfvw",
+  "title": "Greet assistant",
+  "titleGenerationStatus": "success",
+  "createdAt": 1771638966241,
+  "updatedAt": 1771643169297,
+  "lastResponseAt": 1771643169297,
+  "sessionId": "06f2c5d3-f41c-4835-a1a4-fcee07a612fe",
+  "sdkSessionId": "06f2c5d3-f41c-4835-a1a4-fcee07a612fe",
+  "usage": {
+    "model": "deepseek-chat",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0
+  }
+}

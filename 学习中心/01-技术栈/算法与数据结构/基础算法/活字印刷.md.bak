@@ -1,0 +1,52 @@
+[题目链接]([1079. 活字印刷 - 力扣（LeetCode）](https://leetcode.cn/problems/letter-tile-possibilities/?envType=problem-list-v2&envId=LBZR6IMZ)
+![](Pasted%20image%2020250121204250.png)
+
+题目类型：计数 + 回溯   ||  计数 + DP
+
+# 题目思路
+以`"ABB"`为例，构成的递归树为
+![](微信图片_20250121212232.jpg)
+递归树的每一个节点都为一个答案，我们只需要计算出这棵构造树除根节点外的所有节点数即可。
+使用`DFS`递归遍历每一个节点进行计数，定义`dfs(cnt map[rune]int)`为当前剩余的字母，所能构成子树的节点个数。
+
+即`dfs('AAB')`就是最终答案。
+本质上就是计算 **递归树** 的节点数量。
+
+## 递归思路
+`for`循环广度遍历，本次需要从序列种拿出的对象。
+递归深度遍历，在上次选择的对象的基础上进行选择剩下字母对象。
+
+## 结束标志
+当所有情况的递归子树都遍历完成之后，就结束了，所以不需要手动结束递归。当遍历完这棵递归树后，就自己结束。
+然后每进入一个节点res++， 将当前递归结果的res返回，就实现了将下游的节点数量结果传递给子树上游。
+
+即将结果从下游传递并累加到上游。
+
+# AC代码
+```go
+func numTilePossibilities(tiles string) int {
+    chars := make(map[rune]int)
+    for _, c := range tiles {
+        chars[c] ++
+    }
+
+    var dfs func() int
+    dfs = func() (res int){
+        for c, v := range chars {
+            if v > 0 {
+                res++
+                chars[c] --
+                res += dfs()
+                chars[c] ++
+            }
+        }
+        return res
+    }
+    return dfs()
+}
+```
+
+
+
+
+

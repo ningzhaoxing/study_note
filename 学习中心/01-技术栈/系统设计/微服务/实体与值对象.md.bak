@@ -1,0 +1,235 @@
+# 实体
+在代码模型中，实体的表现形式是实体类，这个类包含了实体的**属性**和**方法**，通过这些方法实现实体自身的业务逻辑。
+
+在DDD中，这些实体类一般采用*充血模型*，与这个实体相关的所有业务逻辑都在实体类的方法中实现，跨多个实体的领域逻辑则在领域服务中实现。
+
+实体以 *DO（领域对象）* 的形式存在，每个实体对象都有唯一的 ***ID***。比如商品是商品上下文的一个实体，通过唯一的商品 ***ID*** 来标识，不管这个商品的数据如何变化，商品的 ***ID*** 一直保持不变，它始终是同一个商品。
+
+而在有些复杂场景下，实体与持久化对象则可能是一对多或者多对一的关系。
+
+例如，
+用户 user 与角色 role 两个持久化对象可生成权限实体，一个实体对应两个持久化对象，这是一对多的场景。
+
+例如，
+有些场景为了避免数据库的联表查询，提升系统性能，会将客户信息 customer 和账户信息 account 两类数据保存到同一张数据库表中，客户和账户两个实体可根据需要从一个持久化对象中生成，这就是多对一的场景。
+
+具体来说，
+权限管理系统 --- 用户实体，代码如下：
+```java
+@NoArgsConstructor
+@Getter
+public class User extends Aggregate<Long, User> {
+
+    /**
+     * 用户id-聚合根唯一标识
+     */
+    private UserId userId;
+
+    /**
+     * 用户名
+     */
+    private String userName;
+
+    /**
+     * 姓名
+     */
+    private String realName;
+
+    /**
+     * 手机号
+     */
+    private String phone;
+
+    /**
+     * 密码
+     */
+    private String password;
+
+    /**
+     * 锁定结束时间
+     */
+    private Date lockEndTime;
+
+    /**
+     * 登录失败次数
+     */
+    private Integer failNumber;
+
+    /**
+     * 用户角色
+     */
+    private List<Role> roles;
+
+    /**
+     * 部门
+     */
+    private Department department;
+
+    /**
+     * 领导
+     */
+    private User leader;
+
+    /**
+     * 下属
+     */
+    private List<User> subordinationList = new ArrayList<>();
+
+    /**
+     * 用户状态
+     */
+    private UserStatus userStatus;
+
+    /**
+     * 用户地址
+     */
+    private Address address;
+
+    public User(String userName, String phone, String password) {
+
+        saveUserName(userName);
+        savePhone(phone);
+        savePassword(password);
+    }
+
+    /**
+     * 保存用户名
+     * @param userName
+     */
+    private void saveUserName(String userName) {
+        if (StringUtils.isBlank(userName)){
+            Assert.throwException("用户名不能为空！");
+        }
+
+        this.userName = userName;
+    }
+
+    /**
+     * 保存电话
+     * @param phone
+     */
+    private void savePhone(String phone) {
+        if (StringUtils.isBlank(phone)){
+            Assert.throwException("电话不能为空！");
+        }
+
+        this.phone = phone;
+    }
+
+    /**
+     * 保存密码
+     * @param password
+     */
+    private void savePassword(String password) {
+        if (StringUtils.isBlank(password)){
+            Assert.throwException("密码不能为空！");
+        }
+
+        this.password = password;
+    }
+
+    /**
+     * 保存用户地址
+     * @param province
+     * @param city
+     * @param region
+     */
+    public void saveAddress(String province,String city,String region){
+        this.address = new Address(province,city,region);
+    }
+
+    /**
+     * 保存用户角色
+     * @param roleList
+     */
+    public void saveRole(List<Role> roleList) {
+
+        if (CollectionUtils.isEmpty(roles)){
+            Assert.throwException("角色不能为空！");
+        }
+
+        this.roles = roleList;
+    }
+
+    /**
+     * 保存领导
+     * @param leader
+     */
+    public void saveLeader(User leader) {
+        if (Objects.isNull(leader)){
+            Assert.throwException("leader不能为空！");
+        }
+        this.leader = leader;
+    }
+
+    /**
+     * 增加下属
+     * @param user
+     */
+    public void increaseSubordination(User user) {
+
+        if (null == user){
+            Assert.throwException("leader不能为空！");
+        }
+
+        this.subordinationList.add(user);
+    }
+}
+
+```
+
+# 值对象
+
+值对象本质上就是一个*集*。
+
+> 集：若干个用于描述目的、具有整体概念和不可修改的属性。
+
+在领域建模的过程中，值对象可以保证属性归类的清晰和概念的完整性，避免属性零碎。
+
+举例代码如下：
+```java
+/**
+ * 地址数据
+ */
+@Getter
+public class Address extends ValueObject {
+    /**
+     * 省
+     */
+    private String province;
+
+    /**
+     * 市
+     */
+    private String city;
+
+    /**
+     * 区
+     */
+    private String region;
+
+    public Address(String province, String city, String region) {
+        if (StringUtils.isBlank(province)){
+            Assert.throwException("province不能为空！");
+        }
+        if (StringUtils.isBlank(city)){
+            Assert.throwException("city不能为空！");
+        }
+        if (StringUtils.isBlank(region)){
+            Assert.throwException("region不能为空！");
+
+        }
+        this.province = province;
+        this.city = city;
+        this.region = region;
+    }
+}
+
+```
+
+![](Pasted%20image%2020250228163426.png)
+
+对于是否要设置为*值对象* ？
+是否要设计成值对象，你要看这个对象是否后续还会来回修改，会不会有生命周期。
+
+如果不可修改，并且以后也不会专门针对它进行查询或者统计，你就可以把它设计成值对象，如果不行，那就设计成实体吧。

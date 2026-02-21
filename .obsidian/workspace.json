@@ -1,0 +1,324 @@
+{
+  "main": {
+    "id": "9c45527ec4c3b639",
+    "type": "split",
+    "children": [
+      {
+        "id": "00629f6dc7e13c4a",
+        "type": "split",
+        "children": [
+          {
+            "id": "8b46ab5a3079af30",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "4632507f2dad3be6",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "学习中心/02-项目实践/个人项目/灵码云/codeRunner-client 方案设计.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "codeRunner-client 方案设计"
+                }
+              }
+            ]
+          },
+          {
+            "id": "1f54b4f49d15c938",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "18e26246bee7c376",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "terminal:terminal",
+                  "state": {
+                    "terminal:terminal": {
+                      "cwd": "/Users/ningzhaoxing/Desktop/my_note",
+                      "focus": false,
+                      "profile": {
+                        "args": [
+                          "--login"
+                        ],
+                        "executable": "/bin/zsh",
+                        "followTheme": true,
+                        "name": "",
+                        "platforms": {
+                          "darwin": true
+                        },
+                        "pythonExecutable": "python3",
+                        "restoreHistory": false,
+                        "rightClickAction": "copyPaste",
+                        "successExitCodes": [
+                          "0",
+                          "SIGINT",
+                          "SIGTERM"
+                        ],
+                        "terminalOptions": {
+                          "documentOverride": null
+                        },
+                        "type": "integrated",
+                        "useWin32Conhost": true
+                      },
+                      "serial": null
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "terminal",
+                  "title": "终端：zsh"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "637eb9a657aa49bf",
+    "type": "split",
+    "children": [
+      {
+        "id": "e88ee65ca3b9d257",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0f0adb34bbd6bf99",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "17064c8d6ad36bcb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "773681ec23773427",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 304
+  },
+  "right": {
+    "id": "efee4d861134be2e",
+    "type": "split",
+    "children": [
+      {
+        "id": "318bcecfc3b3a5a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "509415907122859a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "5fd96016114e0d7e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "10382adb5f578bac",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "f24d02056550fb1f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "b9c7e1e2565c32f2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "05ce96dc42898d51",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "学习中心/02-项目实践/个人项目/灵码云/项目里程碑.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "项目里程碑"
+            }
+          },
+          {
+            "id": "5b60d3aeded81cd6",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 407
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:新建数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "remotely-save:Remotely Save": false,
+      "obsidian42-brat:BRAT": false,
+      "claudian:Open Claudian": false,
+      "terminal:Open terminal": false
+    }
+  },
+  "active": "18e26246bee7c376",
+  "lastOpenFiles": [
+    "学习中心/02-项目实践/个人项目/灵码云/codeRunner-client 方案设计.md",
+    "学习中心/验证报告.md",
+    "未命名.base",
+    "学习中心/02-项目实践/个人项目/灵码云/codeRunner-server 方案设计.md",
+    "学习中心/02-项目实践/个人项目/灵码云/项目技术方案.md",
+    "学习中心/02-项目实践/个人项目/灵码云/项目里程碑.md",
+    "学习中心/04-学习资源/AI与机器学习/llamaIndex/LlamaIndex的使用和集成AI_Agent.md",
+    "学习中心/02-项目实践/个人项目/灵码云",
+    "学习中心/04-学习资源/README.md",
+    "学习中心/04-学习资源/读书笔记/写作/obsidian + claudian 打造 AI 智能个人知识库.md",
+    "学习中心/00-索引与导航.md",
+    "学习中心/04-学习资源/读书笔记/写作",
+    "写作",
+    "skills",
+    "学习中心/04-学习资源/读书笔记/个人成长/调整自己心境的办法.md",
+    "批量移动秋招文件.sh",
+    "批量更新链接.sh",
+    "批量更新图片引用.sh",
+    "修复图片记录.sh",
+    "检查图片引用状态.sh",
+    "学习中心/迁移日志.md",
+    "学习中心/链接映射表.md",
+    "学习中心/资源/丢失图片记录.md",
+    "学习中心/资源/图片/app-arch.png",
+    "学习中心/01-技术栈/README.md",
+    "学习中心/05-成长记录/README.md",
+    "学习中心/03-面试准备/README.md",
+    "学习中心/02-项目实践/README.md",
+    "学习中心/资源/计算机网络/TCP相关2.png",
+    "学习中心/资源/其他/HTTPS.canvas",
+    "学习中心/05-成长记录/问题记录/开会.md",
+    "学习中心/05-成长记录/问题记录/qs.md",
+    "学习中心/03-面试准备/面试经验/字节.md",
+    "学习中心/03-面试准备/模拟面试/面试.md",
+    "学习中心/03-面试准备/简历材料/题库1.md",
+    "学习中心/03-面试准备/简历材料/未命名.md",
+    "学习中心/03-面试准备/简历材料/自我介绍.md",
+    "学习中心/05-成长记录/问题记录/个人积累.md",
+    "学习中心/资源/其他/DNS域名解析过程.canvas",
+    "学习中心/资源/图片/QQ_1749803312844.png",
+    "学习中心/资源/图片/QQ_1749803350528.png",
+    "学习中心/资源/图片/Pasted image 20250810183606.png",
+    "学习中心/资源/图片/Pasted image 20250701105846.png",
+    "学习中心/01-技术栈/计算机网络/TCP-UDP/assets/TCP三次握手.png",
+    "学习中心/资源/计算机网络/Pasted image 20250307084636.png",
+    "学习中心/资源/计算机网络/Pasted image 20250307084630.png",
+    "学习中心/资源/计算机网络/Pasted image 20250307084624.png",
+    "秋招/计网面经/HTTP篇/HTTPS.canvas",
+    "秋招/计网面经/应用层/DNS域名解析过程.canvas",
+    "学习笔记/学习/面试积淀/技术面/场景题/用户限流分布式系统.canvas",
+    "学习笔记/学习/面试积淀/技术面/计网面经/HTTP篇/HTTPS.canvas",
+    "学习笔记/学习/面试积淀/技术面/计网面经/应用层/DNS域名解析过程.canvas",
+    "学习笔记/学习/面试积淀/技术面/中间件原理/mysql/思维导图/事物.canvas",
+    "学习笔记/学习/面试积淀/技术面/中间件原理/mysql/思维导图/MVCC.canvas",
+    "学习笔记/学习/面试积淀/技术面/中间件原理/mysql/思维导图/mysql.canvas"
+  ]
+}

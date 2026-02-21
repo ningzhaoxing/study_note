@@ -1,0 +1,20 @@
+{
+  "id": "conv-1771595581874-wmmya7gk3",
+  "title": "hello",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1771595581875,
+  "updatedAt": 1771638956945,
+  "lastResponseAt": 1771595780765,
+  "sessionId": null,
+  "sdkSessionId": "34c6e1ce-5162-47c6-ad58-ba140add18fd",
+  "currentNote": "工作/Agent 工程/Agent 意图识别.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0
+  }
+}

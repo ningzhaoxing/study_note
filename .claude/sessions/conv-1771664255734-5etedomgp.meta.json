@@ -1,0 +1,19 @@
+{
+  "id": "conv-1771664255734-5etedomgp",
+  "title": "Greet in Chinese",
+  "titleGenerationStatus": "success",
+  "createdAt": 1771664255734,
+  "updatedAt": 1771669264329,
+  "lastResponseAt": 1771664265290,
+  "sessionId": "d4422281-8e7c-43d7-846e-4cccd112d209",
+  "sdkSessionId": "d4422281-8e7c-43d7-846e-4cccd112d209",
+  "usage": {
+    "model": "deepseek-chat",
+    "inputTokens": 1046,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 17088,
+    "contextWindow": 200000,
+    "contextTokens": 18134,
+    "percentage": 9
+  }
+}
