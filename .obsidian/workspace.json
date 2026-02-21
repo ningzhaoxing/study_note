@@ -194,7 +194,7 @@
             }
           },
           {
-            "id": "6a18f9e6311d827a",
+            "id": "e1a5220e67c7d765",
             "type": "leaf",
             "state": {
               "type": "claudian-view",
@@ -225,7 +225,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "6a18f9e6311d827a",
+  "active": "e1a5220e67c7d765",
   "lastOpenFiles": [
     "test-dry-run.md",
     "test-commit.md",
