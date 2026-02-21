@@ -246,7 +246,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 407
+    "width": 638
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -263,7 +263,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "18e26246bee7c376",
+  "active": "0f0adb34bbd6bf99",
   "lastOpenFiles": [
     "学习中心/02-项目实践/个人项目/灵码云/codeRunner-client 方案设计.md",
     "学习中心/验证报告.md",

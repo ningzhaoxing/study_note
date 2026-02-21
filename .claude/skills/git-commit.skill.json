@@ -1,0 +1,73 @@
+{
+  "name": "git-commit",
+  "description": "使用 git 将本地更改提交到远程仓库",
+  "version": "1.0.0",
+  "author": "Claudian",
+  "license": "MIT",
+  "commands": {
+    "git-commit": {
+      "description": "提交本地更改到 git 仓库",
+      "usage": "git-commit [选项] [提交信息]",
+      "options": [
+        {
+          "name": "help",
+          "short": "h",
+          "long": "help",
+          "description": "显示帮助信息"
+        },
+        {
+          "name": "status",
+          "short": "s",
+          "long": "status",
+          "description": "显示当前 git 状态"
+        },
+        {
+          "name": "message",
+          "short": "m",
+          "long": "message",
+          "description": "指定提交信息",
+          "argument": "MESSAGE"
+        },
+        {
+          "name": "all",
+          "short": "a",
+          "long": "all",
+          "description": "添加所有更改的文件"
+        },
+        {
+          "name": "push",
+          "short": "p",
+          "long": "push",
+          "description": "提交后推送到远程"
+        },
+        {
+          "name": "files",
+          "short": "f",
+          "long": "files",
+          "description": "交互式选择要添加的文件"
+        },
+        {
+          "name": "dry-run",
+          "short": "d",
+          "long": "dry-run",
+          "description": "只显示将要执行的操作，不实际执行"
+        },
+        {
+          "name": "verbose",
+          "short": "v",
+          "long": "verbose",
+          "description": "显示详细输出"
+        }
+      ],
+      "examples": [
+        "git-commit -m \"修复bug\" -p",
+        "git-commit -s",
+        "git-commit -a -m \"更新文档\"",
+        "git-commit -f"
+      ]
+    }
+  },
+  "script": "git-commit.skill.sh",
+  "category": "git",
+  "tags": ["git", "commit", "version-control", "vcs"]
+}
