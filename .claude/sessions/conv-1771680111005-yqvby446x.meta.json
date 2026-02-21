@@ -1,0 +1,19 @@
+{
+  "id": "conv-1771680111005-yqvby446x",
+  "title": "Define Technical Design Framework",
+  "titleGenerationStatus": "success",
+  "createdAt": 1771680111006,
+  "updatedAt": 1771683453651,
+  "lastResponseAt": 1771683453651,
+  "sessionId": "8257e9f4-c16d-4fda-999f-f510d4442f28",
+  "sdkSessionId": "8257e9f4-c16d-4fda-999f-f510d4442f28",
+  "usage": {
+    "model": "deepseek-chat",
+    "inputTokens": 9946,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 94080,
+    "contextWindow": 200000,
+    "contextTokens": 104026,
+    "percentage": 52
+  }
+}

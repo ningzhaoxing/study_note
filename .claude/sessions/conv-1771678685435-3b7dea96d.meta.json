@@ -1,0 +1,19 @@
+{
+  "id": "conv-1771678685435-3b7dea96d",
+  "title": "Analyze go-zero backend optimization",
+  "titleGenerationStatus": "success",
+  "createdAt": 1771678685436,
+  "updatedAt": 1771683847243,
+  "lastResponseAt": 1771679572501,
+  "sessionId": "5e37cd1d-1026-4f8a-97d5-9cfe829e55b3",
+  "sdkSessionId": "5e37cd1d-1026-4f8a-97d5-9cfe829e55b3",
+  "usage": {
+    "model": "deepseek-chat",
+    "inputTokens": 51,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 40256,
+    "contextWindow": 200000,
+    "contextTokens": 40307,
+    "percentage": 20
+  }
+}

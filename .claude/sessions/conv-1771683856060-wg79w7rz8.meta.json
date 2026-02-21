@@ -1,0 +1,19 @@
+{
+  "id": "conv-1771683856060-wg79w7rz8",
+  "title": "Create Git commit",
+  "titleGenerationStatus": "success",
+  "createdAt": 1771683856060,
+  "updatedAt": 1771683877044,
+  "lastResponseAt": 1771683873752,
+  "sessionId": "ff89c7c0-46dd-4a39-94e4-98ac01d9c4f8",
+  "sdkSessionId": "ff89c7c0-46dd-4a39-94e4-98ac01d9c4f8",
+  "usage": {
+    "model": "deepseek-chat",
+    "inputTokens": 275,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 19008,
+    "contextWindow": 200000,
+    "contextTokens": 19283,
+    "percentage": 10
+  }
+}

@@ -2,5 +2,6 @@
   "translucency": true,
   "baseFontSizeAction": true,
   "cssTheme": "Primary",
-  "theme": "moonstone"
+  "theme": "moonstone",
+  "baseFontSize": 17
 }
