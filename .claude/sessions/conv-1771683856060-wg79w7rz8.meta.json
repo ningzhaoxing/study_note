@@ -3,17 +3,17 @@
   "title": "Create Git commit",
   "titleGenerationStatus": "success",
   "createdAt": 1771683856060,
-  "updatedAt": 1771684125254,
-  "lastResponseAt": 1771684125254,
+  "updatedAt": 1771684464015,
+  "lastResponseAt": 1771684464015,
   "sessionId": "ff89c7c0-46dd-4a39-94e4-98ac01d9c4f8",
   "sdkSessionId": "ff89c7c0-46dd-4a39-94e4-98ac01d9c4f8",
   "usage": {
     "model": "deepseek-chat",
-    "inputTokens": 81,
+    "inputTokens": 193,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 37824,
+    "cacheReadInputTokens": 57792,
     "contextWindow": 200000,
-    "contextTokens": 37905,
-    "percentage": 19
+    "contextTokens": 57985,
+    "percentage": 29
   }
 }
