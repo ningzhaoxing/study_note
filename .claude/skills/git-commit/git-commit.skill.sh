@@ -22,14 +22,20 @@ show_help() {
     echo "  -a, --all           添加所有更改的文件"
     echo "  -p, --push          提交后推送到远程"
     echo "  -f, --files         交互式选择要添加的文件"
+    echo "  -b, --branch        指定要推送到的分支名称"
     echo "  -d, --dry-run       只显示将要执行的操作，不实际执行"
     echo "  -v, --verbose       显示详细输出"
     echo ""
     echo "示例:"
-    echo "  git-commit -m \"修复bug\" -p    # 提交并推送"
-    echo "  git-commit -s                 # 只显示状态"
-    echo "  git-commit -a -m \"更新文档\"   # 添加所有更改并提交"
-    echo "  git-commit -f                # 交互式选择文件"
+    echo "  git-commit -m \"修复bug\" -p          # 提交并推送（交互式选择分支）"
+    echo "  git-commit -m \"修复bug\" -p -b main  # 提交并推送到 main 分支"
+    echo "  git-commit -s                       # 只显示状态"
+    echo "  git-commit -a -m \"更新文档\"         # 添加所有更改并提交"
+    echo "  git-commit -f                       # 交互式选择文件"
+    echo ""
+    echo "注意："
+    echo "  使用 -p 选项时，如果没有指定 -b 选项，"
+    echo "  脚本会交互式询问要推送到哪个分支。"
 }
 
 # 显示 git 状态
@@ -85,6 +91,83 @@ select_files() {
     done
 }
 
+# 获取远程默认分支
+get_default_remote_branch() {
+    # 尝试获取远程默认分支
+    local default_branch=$(git remote show origin | grep "HEAD branch" | cut -d ":" -f 2 | tr -d ' ')
+
+    if [ -n "$default_branch" ]; then
+        echo "$default_branch"
+    else
+        # 如果无法获取，尝试常见的默认分支
+        if git show-ref --verify --quiet refs/heads/main; then
+            echo "main"
+        elif git show-ref --verify --quiet refs/heads/master; then
+            echo "master"
+        else
+            echo ""
+        fi
+    fi
+}
+
+# 交互式选择分支
+select_branch() {
+    local current_branch=$(git branch --show-current)
+    local default_branch=$(get_default_remote_branch)
+
+    echo -e "${BLUE}当前分支: ${GREEN}$current_branch${NC}"
+
+    # 获取所有远程分支
+    local remote_branches=$(git branch -r | grep -v "HEAD" | sed 's/origin\///' | sort | uniq)
+
+    if [ -n "$remote_branches" ]; then
+        echo -e "${BLUE}可用的远程分支:${NC}"
+        local i=1
+        local branch_array=()
+
+        while IFS= read -r branch; do
+            if [ -n "$branch" ]; then
+                local display_name="$branch"
+                if [ "$branch" = "$default_branch" ]; then
+                    display_name="$branch (默认)"
+                fi
+                echo "  $i) $display_name"
+                branch_array[$i]="$branch"
+                ((i++))
+            fi
+        done <<< "$remote_branches"
+
+        echo -e "${BLUE}选择要推送到的分支 (输入数字，默认为 $default_branch):${NC} "
+        read -r selection
+
+        if [ -z "$selection" ]; then
+            if [ -n "$default_branch" ]; then
+                echo -e "${GREEN}使用默认分支: $default_branch${NC}"
+                echo "$default_branch"
+                return 0
+            else
+                echo -e "${YELLOW}未选择分支，使用当前分支: $current_branch${NC}"
+                echo "$current_branch"
+                return 0
+            fi
+        fi
+
+        if [ -n "${branch_array[$selection]}" ]; then
+            echo -e "${GREEN}选择分支: ${branch_array[$selection]}${NC}"
+            echo "${branch_array[$selection]}"
+            return 0
+        else
+            echo -e "${YELLOW}无效的选择，使用默认分支: $default_branch${NC}"
+            echo "$default_branch"
+            return 0
+        fi
+    else
+        echo -e "${YELLOW}没有找到远程分支，使用当前分支: $current_branch${NC}"
+        echo "$current_branch"
+        return 0
+    fi
+}
+
 # 主函数
 main() {
     local commit_message=""
@@ -94,6 +177,7 @@ main() {
     local dry_run=false
     local verbose=false
     local show_status_only=false
+    local target_branch=""
 
     # 解析参数
     while [[ $# -gt 0 ]]; do
@@ -134,6 +218,15 @@ main() {
             -v|--verbose)
                 verbose=true
                 shift
+                ;;
+            -b|--branch)
+                if [ -n "$2" ]; then
+                    target_branch="$2"
+                    shift 2
+                else
+                    echo -e "${RED}错误: -b 选项需要分支名称${NC}"
+                    return 1
+                fi
                 ;;
             *)
                 # 如果没有选项，则视为提交信息
@@ -207,15 +300,38 @@ main() {
 
             # 推送到远程
             if [ "$do_push" = true ]; then
-                echo -e "${GREEN}推送到远程仓库...${NC}"
+                local current_branch=$(git branch --show-current)
+                local push_branch="$current_branch"
+
+                # 确定目标分支
+                if [ -n "$target_branch" ]; then
+                    push_branch="$target_branch"
+                    echo -e "${GREEN}推送到指定分支: $push_branch${NC}"
+                else
+                    echo -e "${BLUE}确定推送目标分支...${NC}"
+                    push_branch=$(select_branch)
+                fi
+
+                echo -e "${GREEN}推送到远程仓库 ($push_branch)...${NC}"
 
                 # 尝试推送
-                git push
+                if [ "$push_branch" = "$current_branch" ]; then
+                    # 推送到同名分支
+                    git push
+                else
+                    # 推送到不同分支
+                    git push origin "$current_branch:$push_branch"
+                fi
 
                 # 如果推送失败，尝试设置上游分支
                 if [ $? -ne 0 ]; then
                     echo -e "${YELLOW}尝试设置上游分支并推送...${NC}"
-                    git push --set-upstream origin $(git branch --show-current)
+
+                    if [ "$push_branch" = "$current_branch" ]; then
+                        git push --set-upstream origin "$current_branch"
+                    else
+                        git push --set-upstream origin "$current_branch:$push_branch"
+                    fi
 
                     if [ $? -eq 0 ]; then
                         echo -e "${GREEN}✓ 推送成功（已设置上游分支）${NC}"
@@ -234,7 +350,17 @@ main() {
     else
         echo "[DRY RUN] git commit -m \"$commit_message\""
         if [ "$do_push" = true ]; then
-            echo "[DRY RUN] git push"
+            local current_branch=$(git branch --show-current)
+            local push_branch="$current_branch"
+
+            if [ -n "$target_branch" ]; then
+                push_branch="$target_branch"
+                echo "[DRY RUN] 将推送到分支: $push_branch"
+                echo "[DRY RUN] git push origin $current_branch:$push_branch"
+            else
+                echo "[DRY RUN] 将交互式选择分支"
+                echo "[DRY RUN] git push"
+            fi
         fi
     fi
 
