@@ -1,0 +1,20 @@
+{
+  "id": "conv-1772262969154-omav1c24j",
+  "title": "选中的表格格式有问题修复一下",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1772262969154,
+  "updatedAt": 1772272173098,
+  "lastResponseAt": 1772268621481,
+  "sessionId": "ea12680f-418c-48f5-80b5-eb02e573044f",
+  "sdkSessionId": "ea12680f-418c-48f5-80b5-eb02e573044f",
+  "currentNote": "工作/基础工程/TARA报告导出模块/TARA报告导出优化方案_PRD_v1.0.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 93,
+    "cacheCreationInputTokens": 9039,
+    "cacheReadInputTokens": 70664,
+    "contextWindow": 200000,
+    "contextTokens": 79796,
+    "percentage": 40
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "conv-1772094385942-dx5vm8npm",
+  "title": "这个文件的怎么可读性这么弱，优化一下",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1772094385943,
+  "updatedAt": 1772517798108,
+  "lastResponseAt": 1772508292535,
+  "sessionId": "2ccb0c8e-3403-4326-abb7-ed127e59f167",
+  "sdkSessionId": "2ccb0c8e-3403-4326-abb7-ed127e59f167",
+  "currentNote": "工作/基础工程/TARA报告导出模块/报告下载优化方案v1.1.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 5157,
+    "cacheCreationInputTokens": 2876,
+    "cacheReadInputTokens": 40497,
+    "contextWindow": 200000,
+    "contextTokens": 48530,
+    "percentage": 24
+  }
+}

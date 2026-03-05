@@ -1,0 +1,20 @@
+{
+  "id": "conv-1772517816314-p6wox0d4k",
+  "title": "格式化一下这个文档，提高这个文档的可读性",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1772517816315,
+  "updatedAt": 1772541515707,
+  "lastResponseAt": 1772528664040,
+  "sessionId": "c7ee3fed-e5d8-4122-a908-0eb38ca4ef33",
+  "sdkSessionId": "c7ee3fed-e5d8-4122-a908-0eb38ca4ef33",
+  "currentNote": "工作/Agent 工程/Skill/是否需要重构 Skill 的深度分析报告.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 1249,
+    "cacheCreationInputTokens": 4877,
+    "cacheReadInputTokens": 46228,
+    "contextWindow": 200000,
+    "contextTokens": 52354,
+    "percentage": 26
+  }
+}

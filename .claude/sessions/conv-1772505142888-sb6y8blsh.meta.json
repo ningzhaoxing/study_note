@@ -1,0 +1,20 @@
+{
+  "id": "conv-1772505142888-sb6y8blsh",
+  "title": "该文档格式有点问题，修正一下让其更可读一些",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1772505142889,
+  "updatedAt": 1772709694807,
+  "lastResponseAt": 1772542695980,
+  "sessionId": "67a4219e-1c7a-4494-a43e-d389f1c69544",
+  "sdkSessionId": "67a4219e-1c7a-4494-a43e-d389f1c69544",
+  "currentNote": "工作/Agent 工程/Skill/Agent 架构重构方案：从 Tool 到 Skill.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 7943,
+    "cacheCreationInputTokens": 9667,
+    "cacheReadInputTokens": 81595,
+    "contextWindow": 200000,
+    "contextTokens": 99205,
+    "percentage": 50
+  }
+}

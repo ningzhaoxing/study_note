@@ -1,0 +1,20 @@
+{
+  "id": "conv-1772272185622-q26tnovf2",
+  "title": "把这个文档整理一下，现在可读性不太好",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1772272185624,
+  "updatedAt": 1772505120870,
+  "lastResponseAt": 1772277360380,
+  "sessionId": "8cc3f11c-2eb3-4348-9607-6277c666ae12",
+  "sdkSessionId": "8cc3f11c-2eb3-4348-9607-6277c666ae12",
+  "currentNote": "工作/基础工程/资产Agent/资产识别 Agent 架构设计.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 85,
+    "cacheCreationInputTokens": 16352,
+    "cacheReadInputTokens": 114142,
+    "contextWindow": 200000,
+    "contextTokens": 130579,
+    "percentage": 65
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "conv-1772616112373-guyh9l0bf",
+  "title": "帮我完成该笔记。要求结构清晰、有写作的逻辑脉络流程而不是关键点的堆砌",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1772616112373,
+  "updatedAt": 1772708191536,
+  "lastResponseAt": 1772616907293,
+  "sessionId": "6a82ab22-d97b-481a-8b43-ae7cbd8a8e2d",
+  "sdkSessionId": "6a82ab22-d97b-481a-8b43-ae7cbd8a8e2d",
+  "currentNote": "学习中心/01-技术栈/数据库/Redis/Redis 主从复制.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 19631,
+    "cacheReadInputTokens": 13920,
+    "contextWindow": 200000,
+    "contextTokens": 33552,
+    "percentage": 17
+  }
+}

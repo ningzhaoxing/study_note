@@ -1,0 +1,20 @@
+{
+  "id": "conv-1772171690394-sc14dpuwf",
+  "title": "这篇bug技术总结告诉我们什么",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1772171690395,
+  "updatedAt": 1772172758663,
+  "lastResponseAt": 1772172146190,
+  "sessionId": "bc36f7ba-ae3c-4e2e-adcd-bcf88ad0bf06",
+  "sdkSessionId": "bc36f7ba-ae3c-4e2e-adcd-bcf88ad0bf06",
+  "currentNote": "工作/工程经验/BUG踩坑/BUG_292_技术总结_Task_ID碰撞导致批量任务丢失.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 6,
+    "cacheCreationInputTokens": 801,
+    "cacheReadInputTokens": 18488,
+    "contextWindow": 200000,
+    "contextTokens": 19295,
+    "percentage": 10
+  }
+}

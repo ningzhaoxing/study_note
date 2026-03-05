@@ -39,8 +39,8 @@
     ]
   },
   "permissionMode": "yolo",
-  "model": "deepseek-chat",
-  "thinkingBudget": "off",
+  "model": "sonnet",
+  "thinkingBudget": "low",
   "enableAutoTitleGeneration": true,
   "titleGenerationModel": "",
   "show1MModel": false,
@@ -54,7 +54,7 @@
     "~/Downloads"
   ],
   "persistentExternalContextPaths": [],
-  "environmentVariables": "ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic\nANTHROPIC_AUTH_TOKEN=\"sk-7da156c4a35e4670b76b6f1c1760a265\"\nANTHROPIC_MODEL=deepseek-chat\nANTHROPIC_SMALL_FAST_MODEL=deepseek-chat",
+  "environmentVariables": "ANTHROPIC_BASE_URL=\"https://console.cloudrouter.online\"\nANTHROPIC_AUTH_TOKEN=\"sk-9c22cde4905a83bc543545e52d9c44ef310aa60d29dee0ad87bcde4d6b4a82b0\"",
   "envSnippets": [],
   "customContextLimits": {},
   "keyboardNavigation": {
@@ -66,9 +66,9 @@
   "claudeCliPath": "",
   "claudeCliPathsByHost": {},
   "loadUserClaudeSettings": true,
-  "lastClaudeModel": "haiku",
+  "lastClaudeModel": "sonnet",
   "lastCustomModel": "",
-  "lastEnvHash": "ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic|ANTHROPIC_MODEL=deepseek-chat",
+  "lastEnvHash": "ANTHROPIC_BASE_URL=https://console.cloudrouter.online",
   "maxTabs": 3,
   "tabBarPosition": "input",
   "enableAutoScroll": true,

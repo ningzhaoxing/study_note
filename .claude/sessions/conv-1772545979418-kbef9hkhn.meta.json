@@ -1,0 +1,20 @@
+{
+  "id": "conv-1772545979418-kbef9hkhn",
+  "title": "将该文档格式化一下，增强可读性",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1772545979419,
+  "updatedAt": 1772616037281,
+  "lastResponseAt": 1772546344286,
+  "sessionId": "e2001af7-ee4b-4a12-8c4b-00b3de38c24e",
+  "sdkSessionId": "e2001af7-ee4b-4a12-8c4b-00b3de38c24e",
+  "currentNote": "工作/Agent 工程/Skill/Tool 转 Skill 核心调研.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 74,
+    "cacheCreationInputTokens": 1004,
+    "cacheReadInputTokens": 27573,
+    "contextWindow": 200000,
+    "contextTokens": 28651,
+    "percentage": 14
+  }
+}

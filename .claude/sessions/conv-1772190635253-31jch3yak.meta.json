@@ -1,0 +1,20 @@
+{
+  "id": "conv-1772190635253-31jch3yak",
+  "title": "告诉我这篇文章在讲什么",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1772190635254,
+  "updatedAt": 1772262955355,
+  "lastResponseAt": 1772190660154,
+  "sessionId": "378bfa26-a472-45ef-9472-b2516ad18e56",
+  "sdkSessionId": "378bfa26-a472-45ef-9472-b2516ad18e56",
+  "currentNote": "个人认知体系/读书/什么是长期主义/什么是真正的长期主义.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 5702,
+    "cacheCreationInputTokens": 953,
+    "cacheReadInputTokens": 27625,
+    "contextWindow": 200000,
+    "contextTokens": 34280,
+    "percentage": 17
+  }
+}

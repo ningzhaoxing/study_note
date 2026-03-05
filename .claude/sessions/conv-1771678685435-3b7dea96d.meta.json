@@ -5,7 +5,7 @@
   "createdAt": 1771678685436,
   "updatedAt": 1771683847243,
   "lastResponseAt": 1771679572501,
-  "sessionId": "5e37cd1d-1026-4f8a-97d5-9cfe829e55b3",
+  "sessionId": null,
   "sdkSessionId": "5e37cd1d-1026-4f8a-97d5-9cfe829e55b3",
   "usage": {
     "model": "deepseek-chat",

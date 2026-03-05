@@ -1,0 +1,23 @@
+{
+  "id": "conv-1771854978532-37m1b90gp",
+  "title": "redis 的IO多路复用技术是怎么实现的？",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1771854978532,
+  "updatedAt": 1772089467282,
+  "lastResponseAt": 1771900622532,
+  "sessionId": "ab32c316-9ea9-4719-98d7-49ecb8b9bd3c",
+  "sdkSessionId": "ab32c316-9ea9-4719-98d7-49ecb8b9bd3c",
+  "previousSdkSessionIds": [
+    "41972080-70d4-4e46-8f34-6786209d6275"
+  ],
+  "currentNote": "学习中心/01-技术栈/数据库/Redis/Redis 为什么这么快？.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2160,
+    "cacheCreationInputTokens": 1109,
+    "cacheReadInputTokens": 27527,
+    "contextWindow": 200000,
+    "contextTokens": 30796,
+    "percentage": 15
+  }
+}

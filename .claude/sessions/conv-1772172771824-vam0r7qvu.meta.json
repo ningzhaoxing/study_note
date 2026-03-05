@@ -1,0 +1,20 @@
+{
+  "id": "conv-1772172771824-vam0r7qvu",
+  "title": "该文档格式有点问题，可读性不好，整理下",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1772172771829,
+  "updatedAt": 1772190615724,
+  "lastResponseAt": 1772181329024,
+  "sessionId": "4e2b953a-29dc-4841-817e-1dc12300b433",
+  "sdkSessionId": "4e2b953a-29dc-4841-817e-1dc12300b433",
+  "currentNote": "工作/基础工程/TARA报告导出模块/报告下载优化方案v1.1.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 32,
+    "cacheCreationInputTokens": 2468,
+    "cacheReadInputTokens": 32694,
+    "contextWindow": 200000,
+    "contextTokens": 35194,
+    "percentage": 18
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "conv-1772089512394-i080v970j",
+  "title": "回答一个问题：选中的 TARA总表是否是可以复用上面的子表？",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1772089512395,
+  "updatedAt": 1772704704151,
+  "lastResponseAt": 1772094217120,
+  "sessionId": "ef5cae8f-5b6e-4d20-8128-c840e63f4e68",
+  "sdkSessionId": "ef5cae8f-5b6e-4d20-8128-c840e63f4e68",
+  "currentNote": "工作/基础工程/TARA报告导出模块/TARA报告导出优化方案_PRD_v1.0.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 4711,
+    "cacheReadInputTokens": 59573,
+    "contextWindow": 200000,
+    "contextTokens": 64285,
+    "percentage": 32
+  }
+}
