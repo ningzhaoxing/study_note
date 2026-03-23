@@ -69,7 +69,7 @@
   "lastClaudeModel": "sonnet",
   "lastCustomModel": "",
   "lastEnvHash": "ANTHROPIC_BASE_URL=https://console.cloudrouter.online",
-  "maxTabs": 3,
+  "maxTabs": 6,
   "tabBarPosition": "input",
   "enableAutoScroll": true,
   "openInMainTab": false,

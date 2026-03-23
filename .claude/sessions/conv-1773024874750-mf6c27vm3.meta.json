@@ -1,0 +1,20 @@
+{
+  "id": "conv-1773024874750-mf6c27vm3",
+  "title": "格式化一下该文档，改善其可读性",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1773024874751,
+  "updatedAt": 1773145442262,
+  "lastResponseAt": 1773028648375,
+  "sessionId": "8ea009b4-5074-4ac4-a858-8cd881f44bb6",
+  "sdkSessionId": "8ea009b4-5074-4ac4-a858-8cd881f44bb6",
+  "currentNote": "工作/Agent 工程/Skill/Skill Middleware（渐进式披露）vs Tool Calling（直接工具调用）.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 2248,
+    "cacheReadInputTokens": 51985,
+    "contextWindow": 200000,
+    "contextTokens": 54234,
+    "percentage": 27
+  }
+}

@@ -5,7 +5,7 @@
   "createdAt": 1772171690395,
   "updatedAt": 1772172758663,
   "lastResponseAt": 1772172146190,
-  "sessionId": "bc36f7ba-ae3c-4e2e-adcd-bcf88ad0bf06",
+  "sessionId": null,
   "sdkSessionId": "bc36f7ba-ae3c-4e2e-adcd-bcf88ad0bf06",
   "currentNote": "工作/工程经验/BUG踩坑/BUG_292_技术总结_Task_ID碰撞导致批量任务丢失.md",
   "usage": {

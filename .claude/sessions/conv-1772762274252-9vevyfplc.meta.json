@@ -1,0 +1,23 @@
+{
+  "id": "conv-1772762274252-9vevyfplc",
+  "title": "整理下该文档，使其可读性更强",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1772762274253,
+  "updatedAt": 1772937632602,
+  "lastResponseAt": 1772937455105,
+  "sessionId": "980cc47f-6bf6-4aa5-8d5f-ac8a77835e02",
+  "sdkSessionId": "980cc47f-6bf6-4aa5-8d5f-ac8a77835e02",
+  "previousSdkSessionIds": [
+    "02a3e857-6970-48e7-92b6-473f6fd20ed7",
+    "ec6f4431-8c68-4e30-b255-6643efef35b9"
+  ],
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 10,
+    "cacheCreationInputTokens": 22411,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 22421,
+    "percentage": 11
+  }
+}

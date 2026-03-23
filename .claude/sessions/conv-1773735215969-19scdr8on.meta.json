@@ -1,0 +1,19 @@
+{
+  "id": "conv-1773735215969-19scdr8on",
+  "title": "@学习中心/01-技术栈/系统设计/设计模式 这个目录的笔记记录的太简单了，帮我优化下，以及常见的使...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1773735215970,
+  "updatedAt": 1774248513930,
+  "lastResponseAt": 1774248513930,
+  "sessionId": "30f3354b-7ea2-426b-94bf-b5bf32883e2c",
+  "sdkSessionId": "30f3354b-7ea2-426b-94bf-b5bf32883e2c",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 178,
+    "cacheReadInputTokens": 89929,
+    "contextWindow": 200000,
+    "contextTokens": 90108,
+    "percentage": 45
+  }
+}

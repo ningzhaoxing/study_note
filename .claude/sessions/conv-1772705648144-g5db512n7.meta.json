@@ -3,18 +3,21 @@
   "title": "@学习中心/01-技术栈/算法与数据结构/力扣/二叉树/ 该目录主要是用于学习二叉树这个数据结构以及...",
   "titleGenerationStatus": "failed",
   "createdAt": 1772705648145,
-  "updatedAt": 1772707168975,
-  "lastResponseAt": 1772707168974,
-  "sessionId": "ac166766-33ef-4b61-8228-7b6dd18ec7ae",
-  "sdkSessionId": "ac166766-33ef-4b61-8228-7b6dd18ec7ae",
+  "updatedAt": 1774237255747,
+  "lastResponseAt": 1774070319926,
+  "sessionId": "9aa456a3-da3c-4aab-b6a7-ac3907244970",
+  "sdkSessionId": "9aa456a3-da3c-4aab-b6a7-ac3907244970",
+  "previousSdkSessionIds": [
+    "ac166766-33ef-4b61-8228-7b6dd18ec7ae"
+  ],
   "usage": {
     "model": "sonnet",
     "inputTokens": 3,
-    "cacheCreationInputTokens": 5920,
-    "cacheReadInputTokens": 13920,
+    "cacheCreationInputTokens": 78597,
+    "cacheReadInputTokens": 0,
     "contextWindow": 200000,
-    "contextTokens": 19843,
-    "percentage": 10
+    "contextTokens": 78600,
+    "percentage": 39
   },
   "subagentData": {
     "toolu_01MSShaZ2xqmYHyDpo9RA2Wy": {

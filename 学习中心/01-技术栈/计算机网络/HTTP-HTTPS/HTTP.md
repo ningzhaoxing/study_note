@@ -1,10 +1,212 @@
 ---
+tags:
+  - 计算机网络/HTTP
+  - 面试题
+created: 2026-03-17
+---
 
-mindmap-plugin: rich
+# HTTP 知识总览
+
+> HTTP（HyperText Transfer Protocol）是应用层协议，运行在 TCP/IP 之上，是 Web 通信的基础。
+> 本文是 HTTP 各专题的**综合概览与索引**，每节末均有详细笔记的跳转链接。
 
 ---
 
-# HTTP
-``` json
-{"theme":"","mindData":[[{"id":"7143ab7b-22d4-93ce","text":"HTTP","isRoot":true,"main":true,"x":4000,"y":4000,"isExpand":true,"layout":{"layoutName":"mindmap2","direct":"mindmap"},"stroke":"","style":{}},{"id":"3cb4e341-1ac6-af4b","text":"URI(统一资源标识符)","stroke":"#087c12","style":{},"x":4147,"y":3630,"layout":null,"isExpand":true,"pid":"7143ab7b-22d4-93ce"},{"id":"9864d4f5-120e-c26e","text":"HTTP方法","stroke":"#e4a7ef","style":{},"x":4147,"y":3875.5,"layout":null,"isExpand":true,"pid":"7143ab7b-22d4-93ce"},{"id":"f22d6c41-a6aa-cef6","text":"持久连接(HTTP keep-alive)","stroke":"#e2be68","style":{},"x":4147,"y":4186.5,"layout":null,"isExpand":true,"pid":"7143ab7b-22d4-93ce"},{"id":"2b4adece-3c90-0833","text":"Cookie","stroke":"#5b96c6","style":{},"x":4147,"y":4389,"layout":null,"isExpand":true,"pid":"7143ab7b-22d4-93ce"},{"id":"3b08549f-6b09-ebd4","text":"结构","stroke":"#ad220a","style":{},"x":3902,"y":3653.5,"layout":null,"isExpand":true,"pid":"7143ab7b-22d4-93ce"},{"id":"762d8ccd-7e56-775f","text":"HTTP状态码","stroke":"#f4b95f","style":{},"x":3832,"y":4031,"layout":null,"isExpand":true,"pid":"7143ab7b-22d4-93ce"},{"id":"3a15b058-4d68-65bf","text":"基本概念","stroke":"#b4a8f7","style":{},"x":3863,"y":4366.5,"layout":null,"isExpand":true,"pid":"7143ab7b-22d4-93ce"},{"id":"4aa9556b-8404-2fac","text":"请求URI","stroke":"#087c12","style":{},"x":4377,"y":3638,"layout":null,"isExpand":true,"pid":"3cb4e341-1ac6-af4b"},{"id":"931b8e9a-29fb-e01a","text":"GET","stroke":"#e4a7ef","style":{},"x":4286,"y":3691,"layout":null,"isExpand":true,"pid":"9864d4f5-120e-c26e"},{"id":"e07cc893-9078-88e6","text":"POST","stroke":"#e4a7ef","style":{},"x":4286,"y":3726,"layout":null,"isExpand":true,"pid":"9864d4f5-120e-c26e"},{"id":"593c12d9-ecb5-9908","text":"PUT","stroke":"#e4a7ef","style":{},"x":4286,"y":3778.5,"layout":null,"isExpand":true,"pid":"9864d4f5-120e-c26e"},{"id":"1455966c-616c-11d5","text":"HEAD","stroke":"#e4a7ef","style":{},"x":4286,"y":3848.5,"layout":null,"isExpand":true,"pid":"9864d4f5-120e-c26e"},{"id":"1861eec9-f7cf-ba12","text":"DELETE","stroke":"#e4a7ef","style":{},"x":4286,"y":3936,"layout":null,"isExpand":true,"pid":"9864d4f5-120e-c26e"},{"id":"d3806fa9-380a-9950","text":"OPTIONS","stroke":"#e4a7ef","style":{},"x":4286,"y":4006,"layout":null,"isExpand":true,"pid":"9864d4f5-120e-c26e"},{"id":"9611f090-de64-abf0","text":"TRACE","stroke":"#e4a7ef","style":{},"x":4286,"y":4041,"layout":null,"isExpand":true,"pid":"9864d4f5-120e-c26e"},{"id":"b0588c81-a1a7-291c","text":"CONNECT","stroke":"#e4a7ef","style":{},"x":4286,"y":4076,"layout":null,"isExpand":true,"pid":"9864d4f5-120e-c26e"},{"id":"775c83a5-4db7-1987","text":"概念：只要任意一端，没有明确提出断开连接， 则保持TCP连接状态","stroke":"#e2be68","style":{},"x":4429,"y":4121,"layout":null,"isExpand":true,"pid":"f22d6c41-a6aa-cef6"},{"id":"e2d804b4-f983-2ba8","text":"好处:减少篇TCP连接的重复建立和断开造成的开销，减轻服务端负载","stroke":"#e2be68","style":{},"x":4429,"y":4177,"layout":null,"isExpand":true,"pid":"f22d6c41-a6aa-cef6"},{"id":"db2d3571-b835-4b1c","text":"HTTP/1.1所有连接默认为持久连接 ；但HTTP/1.0未标准化。","stroke":"#e2be68","style":{},"x":4429,"y":4233,"layout":null,"isExpand":true,"pid":"f22d6c41-a6aa-cef6"},{"id":"a1a6ccbe-0526-198d","text":"实现原理","stroke":"#e2be68","style":{},"x":4429,"y":4268,"layout":null,"isExpand":true,"pid":"f22d6c41-a6aa-cef6"},{"id":"801fa800-a4fe-ce3c","text":"作用：让HTTP保留状态。通过在请求和响应报文中写入Cookie信息来控制客户端的状态","stroke":"#5b96c6","style":{},"x":4257,"y":4313,"layout":null,"isExpand":true,"pid":"2b4adece-3c90-0833"},{"id":"62233297-108c-fed1","text":"实现原理","stroke":"#5b96c6","style":{},"x":4257,"y":4425,"isExpand":true,"layout":null,"pid":"2b4adece-3c90-0833"},{"id":"6dd030a8-85c0-8917","text":"报文首部","stroke":"#ad220a","style":{},"x":3800,"y":3644,"layout":null,"isExpand":true,"pid":"3b08549f-6b09-ebd4"},{"id":"b6edd03d-f716-0747","text":"报文主体(可选)","stroke":"#ad220a","style":{},"x":3757,"y":3714,"layout":null,"isExpand":true,"pid":"3b08549f-6b09-ebd4"},{"id":"c0e7b580-0253-08fa","text":"2xx 成功","stroke":"#f4b95f","style":{},"x":3733,"y":3794,"layout":null,"isExpand":true,"pid":"762d8ccd-7e56-775f"},{"id":"dbb6145f-658f-3ea0","text":"3xx 重定向","stroke":"#f4b95f","style":{},"x":3717,"y":3969,"layout":null,"isExpand":true,"pid":"762d8ccd-7e56-775f"},{"id":"0447dc2c-bcfd-c3b9","text":"4xx 客户端错误","stroke":"#f4b95f","style":{},"x":3685,"y":4179,"layout":null,"isExpand":true,"pid":"762d8ccd-7e56-775f"},{"id":"a9f31a6d-2479-70e8","text":"5xx 服务器错误","stroke":"#f4b95f","style":{},"x":3685,"y":4301.5,"layout":null,"isExpand":true,"pid":"762d8ccd-7e56-775f"},{"id":"f7d5f433-6d78-e560","text":"超文本传输协议，是一种用于分布式、协作式和超媒体信息系统的应用层协议。是万维网的数据通信的基础。","stroke":"#b4a8f7","style":{},"x":3375,"y":4364,"layout":null,"isExpand":true,"pid":"3a15b058-4d68-65bf"},{"id":"621b6498-627b-9042","text":"用来请求访问已被URI识别的资源","stroke":"#e4a7ef","style":{},"x":4357,"y":3691,"layout":null,"isExpand":true,"pid":"931b8e9a-29fb-e01a"},{"id":"1a734486-9f98-71e0","text":"用来传输实体的主体","stroke":"#e4a7ef","style":{},"x":4368,"y":3726,"layout":null,"isExpand":true,"pid":"e07cc893-9078-88e6"},{"id":"09748281-515a-de81","text":"传输文件","stroke":"#e4a7ef","style":{},"x":4356,"y":3761,"layout":null,"isExpand":true,"pid":"593c12d9-ecb5-9908"},{"id":"53b24eb2-ef6d-a208","text":"自身不带验证机制，不安全","stroke":"#e4a7ef","style":{},"x":4356,"y":3796,"layout":null,"isExpand":true,"pid":"593c12d9-ecb5-9908"},{"id":"a6c2fb5b-89f8-0d87","text":"获得报文首部","stroke":"#e4a7ef","style":{},"x":4368,"y":3831,"layout":null,"isExpand":true,"pid":"1455966c-616c-11d5"},{"id":"ceb9335c-b1b2-f911","text":"用于确认URI的有效性及资源更新的日期时间","stroke":"#e4a7ef","style":{},"x":4368,"y":3866,"layout":null,"isExpand":true,"pid":"1455966c-616c-11d5"},{"id":"7ff3bc65-f44b-eb83","text":"删除文件","stroke":"#e4a7ef","style":{},"x":4386,"y":3901,"layout":null,"isExpand":true,"pid":"1861eec9-f7cf-ba12"},{"id":"0bed079a-1f02-916a","text":"按请求URI删除指定的资源","stroke":"#e4a7ef","style":{},"x":4386,"y":3936,"layout":null,"isExpand":true,"pid":"1861eec9-f7cf-ba12"},{"id":"3555d328-c049-b913","text":"自身不携带验证机制，不安全","stroke":"#e4a7ef","style":{},"x":4386,"y":3971,"layout":null,"isExpand":true,"pid":"1861eec9-f7cf-ba12"},{"id":"bdcf5313-8470-d886","text":"用来查询针对URI指定的资源支持的方法","stroke":"#e4a7ef","style":{},"x":4396,"y":4006,"layout":null,"isExpand":true,"pid":"d3806fa9-380a-9950"},{"id":"2365b780-bdf1-b919","text":"追踪路径","stroke":"#e4a7ef","style":{},"x":4378,"y":4041,"layout":null,"isExpand":true,"pid":"9611f090-de64-abf0"},{"id":"f7826f83-3323-8e55","text":"格式：CONNECT 代理服务器名:端口号 HTTP版本","stroke":"#e4a7ef","style":{},"x":4403,"y":4076,"layout":null,"isExpand":true,"pid":"b0588c81-a1a7-291c"},{"id":"dfb724a7-92eb-57ca","text":"除了服务端需要支持持久连接，客户端也需要支持","stroke":"#e2be68","style":{},"x":4896,"y":4233,"layout":null,"isExpand":true,"pid":"db2d3571-b835-4b1c"},{"id":"0b238dca-a86f-f318","text":"管线化","stroke":"#e2be68","style":{},"x":4531,"y":4268,"layout":null,"isExpand":true,"pid":"a1a6ccbe-0526-198d"},{"id":"20fb5047-8f61-f508","text":"1. Cookie会根据服务端发送响应报文中的Set-Cookie的首部字段，通知客户端保存Cookie","stroke":"#5b96c6","style":{},"x":4359,"y":4369,"layout":null,"isExpand":true,"pid":"62233297-108c-fed1"},{"id":"33aa35b1-3de9-7826","text":"2. 下次客户端发送请求时，会自动在请求报文中加入Cookie值","stroke":"#5b96c6","style":{},"x":4359,"y":4425,"layout":null,"isExpand":true,"pid":"62233297-108c-fed1"},{"id":"391f8eea-f92f-82ad","text":"3. 服务端发现客户端发来的Cookie后，会对比服务器记录，得到之前的状态信息","stroke":"#5b96c6","style":{},"x":4359,"y":4460,"layout":null,"isExpand":true,"pid":"62233297-108c-fed1"},{"id":"19d8c0ea-1131-82fa","text":"请求行","stroke":"#ad220a","style":{},"x":3714,"y":3609,"layout":null,"isExpand":true,"pid":"6dd030a8-85c0-8917"},{"id":"46f38bf7-5bad-007b","text":"状态行","stroke":"#ad220a","style":{},"x":3714,"y":3644,"layout":null,"isExpand":true,"pid":"6dd030a8-85c0-8917"},{"id":"fa66d098-545d-b47c","text":"首部字段","stroke":"#ad220a","style":{},"x":3698,"y":3679,"layout":null,"isExpand":true,"pid":"6dd030a8-85c0-8917"},{"id":"1d37e8f9-9c67-0e9e","text":"200 OK","stroke":"#f4b95f","style":{},"x":3641,"y":3759,"layout":null,"isExpand":true,"pid":"c0e7b580-0253-08fa"},{"id":"21a1d2a9-cab3-7bf0","text":"204 No Content","stroke":"#f4b95f","style":{},"x":3583,"y":3794,"layout":null,"isExpand":true,"pid":"c0e7b580-0253-08fa"},{"id":"5472b087-6163-d674","text":"206 Partial Content","stroke":"#f4b95f","style":{},"x":3558,"y":3829,"layout":null,"isExpand":true,"pid":"c0e7b580-0253-08fa"},{"id":"49258395-b4a6-e74e","text":"301 Moved Permanently","stroke":"#f4b95f","style":{},"x":3506,"y":3864,"layout":null,"isExpand":true,"pid":"dbb6145f-658f-3ea0"},{"id":"bdb92ee2-a286-1d49","text":"302 Found","stroke":"#f4b95f","style":{},"x":3603,"y":3899,"layout":null,"isExpand":true,"pid":"dbb6145f-658f-3ea0"},{"id":"2b44c314-843d-ed94","text":"303 See Other","stroke":"#f4b95f","style":{},"x":3575,"y":3934,"layout":null,"isExpand":true,"pid":"dbb6145f-658f-3ea0"},{"id":"eece9d44-754b-3c73","text":"304 Not Modified","stroke":"#f4b95f","style":{},"x":3558,"y":3986.5,"layout":null,"isExpand":true,"pid":"dbb6145f-658f-3ea0"},{"id":"66171339-1e4b-d2ec","text":"307 Temproary Redirect","stroke":"#f4b95f","style":{},"x":3509,"y":4056.5,"layout":null,"isExpand":true,"pid":"dbb6145f-658f-3ea0"},{"id":"2a5cb6bc-39ba-ee57","text":"400 Bad Request","stroke":"#f4b95f","style":{},"x":3523,"y":4126.5,"layout":null,"isExpand":true,"pid":"0447dc2c-bcfd-c3b9"},{"id":"23613a45-c279-55a4","text":"401 Unauthorized","stroke":"#f4b95f","style":{},"x":3521,"y":4179,"layout":null,"isExpand":true,"pid":"0447dc2c-bcfd-c3b9"},{"id":"6fa43314-46cb-a9d9","text":"403 Forbidden","stroke":"#f4b95f","style":{},"x":3544,"y":4214,"layout":null,"isExpand":true,"pid":"0447dc2c-bcfd-c3b9"},{"id":"73120a70-9b28-09bc","text":"404 Not Found","stroke":"#f4b95f","style":{},"x":3541,"y":4249,"layout":null,"isExpand":true,"pid":"0447dc2c-bcfd-c3b9"},{"id":"d3916292-d24f-3d7e","text":"500 Internal Server Error","stroke":"#f4b95f","style":{},"x":3471,"y":4284,"layout":null,"isExpand":true,"pid":"a9f31a6d-2479-70e8"},{"id":"02e36a67-b442-a5bd","text":"503 Service Unavailable","stroke":"#f4b95f","style":{},"x":3475,"y":4319,"layout":null,"isExpand":true,"pid":"a9f31a6d-2479-70e8"},{"id":"2a572b4c-093f-5c27","text":"支持同时并行发送多个请求，而不需要一个接一个地等待响应","stroke":"#e2be68","style":{},"x":4617,"y":4268,"layout":null,"isExpand":true,"pid":"0b238dca-a86f-f318"},{"id":"6ed0fa54-d5b3-7860","text":"包含请求方法，请求URI和HTTP版本","stroke":"#ad220a","style":{},"x":3415,"y":3609,"layout":null,"isExpand":true,"pid":"19d8c0ea-1131-82fa"},{"id":"87e59fe0-092f-7ca7","text":"包含表明响应结果的状态码，原因短语和HTTP版本","stroke":"#ad220a","style":{},"x":3314,"y":3644,"layout":null,"isExpand":true,"pid":"46f38bf7-5bad-007b"},{"id":"f9625684-b981-afc1","text":"包含表示请求和响应的各种条件和属性的各类首部","stroke":"#ad220a","style":{},"x":3308,"y":3679,"layout":null,"isExpand":true,"pid":"fa66d098-545d-b47c"},{"id":"1449cecf-a496-04f1","text":"永久性重定向","stroke":"#f4b95f","style":{},"x":3372,"y":3864,"layout":null,"isExpand":true,"pid":"49258395-b4a6-e74e"},{"id":"336dd251-5b09-6616","text":"临时重定向","stroke":"#f4b95f","style":{},"x":3485,"y":3899,"layout":null,"isExpand":true,"pid":"bdb92ee2-a286-1d49"},{"id":"a5436f2b-d0a4-7f78","text":"临时重定向，但必须使用GET请求","stroke":"#f4b95f","style":{},"x":3296,"y":3934,"layout":null,"isExpand":true,"pid":"2b44c314-843d-ed94"},{"id":"d3503e95-56cf-d55a","text":"资源找到，但请求未符合条件","stroke":"#f4b95f","style":{},"x":3312,"y":3969,"layout":null,"isExpand":true,"pid":"eece9d44-754b-3c73"},{"id":"8d8d443a-8e89-33af","text":"跟重定向没关系","stroke":"#f4b95f","style":{},"x":3408,"y":4004,"layout":null,"isExpand":true,"pid":"eece9d44-754b-3c73"},{"id":"5b93377b-c31f-5519","text":"临时重定向","stroke":"#f4b95f","style":{},"x":3391,"y":4039,"layout":null,"isExpand":true,"pid":"66171339-1e4b-d2ec"},{"id":"8a110b74-ea2b-6da9","text":"遵照浏览器标准，不会从POST变成GET","stroke":"#f4b95f","style":{},"x":3187,"y":4074,"layout":null,"isExpand":true,"pid":"66171339-1e4b-d2ec"},{"id":"78bb7cbf-582e-b26d","text":"请求报文出现语法错误","stroke":"#f4b95f","style":{},"x":3325,"y":4109,"layout":null,"isExpand":true,"pid":"2a5cb6bc-39ba-ee57"},{"id":"529f53e3-8897-56b1","text":"浏览器会像200 OK一样对待该状态码","stroke":"#f4b95f","style":{},"x":3223,"y":4144,"layout":null,"isExpand":true,"pid":"2a5cb6bc-39ba-ee57"},{"id":"4bafc4de-5aa0-1643","text":"需要通过HTTP认证，认证失败","stroke":"#f4b95f","style":{},"x":3265,"y":4179,"layout":null,"isExpand":true,"pid":"23613a45-c279-55a4"},{"id":"60a45d8e-90e9-7c37","text":"访问权限越界","stroke":"#f4b95f","style":{},"x":3410,"y":4214,"layout":null,"isExpand":true,"pid":"6fa43314-46cb-a9d9"},{"id":"ba034aa4-8563-3f69","text":"找不到该资源","stroke":"#f4b95f","style":{},"x":3407,"y":4249,"layout":null,"isExpand":true,"pid":"73120a70-9b28-09bc"},{"id":"7280d1f7-af0a-0c04","text":"服务器在执行请求时错误","stroke":"#f4b95f","style":{},"x":3257,"y":4284,"layout":null,"isExpand":true,"pid":"d3916292-d24f-3d7e"},{"id":"90fbb371-0793-75bf","text":"服务器超负载或正在维护","stroke":"#f4b95f","style":{},"x":3261,"y":4319,"layout":null,"isExpand":true,"pid":"02e36a67-b442-a5bd"}]],"induceData":[],"wireFrameData":[],"relateLinkData":[],"calloutData":[],"opt":{"background":"transparent","fontFamily":"","fontSize":16}}
+## 一、基本概念
+
+| 要素 | 说明 |
+|------|------|
+| **全称** | 超文本传输协议（HyperText Transfer Protocol） |
+| **层级** | OSI 应用层 / TCP/IP 应用层 |
+| **传输层** | 基于 TCP（HTTP/3 基于 QUIC/UDP） |
+| **默认端口** | HTTP → **80**，HTTPS → **443** |
+| **特点** | 无状态、无连接（HTTP/1.1 后支持持久连接） |
+| **无状态解决** | Cookie / Session / JWT Token |
+
+> 详见 [[什么是HTTP]]
+
+---
+
+## 二、HTTP 报文结构
+
+### 请求报文
+
 ```
+请求行:   GET /index.html HTTP/1.1
+请求头:   Host: example.com
+          Accept: text/html
+          Connection: keep-alive
+空行:     （必须）
+请求体:   （GET 通常为空，POST 携带数据）
+```
+
+### 响应报文
+
+```
+状态行:   HTTP/1.1 200 OK
+响应头:   Content-Type: text/html; charset=UTF-8
+          Content-Length: 1024
+空行:     （必须）
+响应体:   <html>...</html>
+```
+
+> 详见 [[HTTP协议详解]]
+
+---
+
+## 三、请求方法
+
+按**安全性**（是否修改服务器状态）和**幂等性**（多次请求结果是否一致）分类：
+
+| 方法          | 语义               | 安全  | 幂等  | 可缓存 |
+| ----------- | ---------------- | :-: | :-: | :-: |
+| **GET**     | 获取资源             |  ✅  |  ✅  |  ✅  |
+| **HEAD**    | 获取响应头，无响应体       |  ✅  |  ✅  |  ✅  |
+| **OPTIONS** | 查询支持的方法（CORS 预检） |  ✅  |  ✅  |  ❌  |
+| **PUT**     | 替换资源（完整更新）       |  ❌  |  ✅  |  ❌  |
+| **DELETE**  | 删除资源             |  ❌  |  ✅  |  ❌  |
+| **POST**    | 提交数据，创建资源        |  ❌  |  ❌  | 条件  |
+| **PATCH**   | 部分修改资源           |  ❌  |  ❌  |  ❌  |
+
+> GET vs POST 详见 [[Get和Post区别]]
+
+---
+
+## 四、状态码
+
+### 2xx 成功
+
+| 状态码 | 含义 | 常见场景 |
+|--------|------|----------|
+| **200** OK | 请求成功 | 通用成功响应 |
+| **201** Created | 资源创建成功 | POST 创建后返回 |
+| **204** No Content | 成功，无响应体 | DELETE 成功 |
+| **206** Partial Content | 范围请求成功 | 断点续传、视频流 |
+
+### 3xx 重定向
+
+| 状态码 | 含义 | 缓存 | 保持方法 |
+|--------|------|:----:|:--------:|
+| **301** | 永久重定向 | ✅ | ❌ |
+| **302** | 临时重定向 | ❌ | ❌ |
+| **304** | 协商缓存命中（Not Modified） | — | — |
+| **307** | 临时重定向 | ❌ | ✅ |
+| **308** | 永久重定向 | ✅ | ✅ |
+
+### 4xx 客户端错误
+
+| 状态码 | 含义 |
+|--------|------|
+| **400** | 请求语法错误 |
+| **401** | 未认证（需要登录） |
+| **403** | 无权限（已登录但被拒绝） |
+| **404** | 资源不存在 |
+| **429** | 请求频率超限（限流） |
+
+### 5xx 服务器错误
+
+| 状态码 | 含义 |
+|--------|------|
+| **500** | 服务器内部错误 |
+| **502** | 网关收到无效响应（后端崩溃） |
+| **503** | 服务不可用（过载/维护） |
+| **504** | 网关等待上游响应超时 |
+
+> 完整状态码详见 [[HTTP常见状态码]]
+
+---
+
+## 五、常见头部字段
+
+### 请求头（常用）
+
+| 字段                | 说明                              |
+| ----------------- | ------------------------------- |
+| `Host`            | 目标域名，**唯一必须携带的字段**              |
+| `Accept`          | 客户端可接受的内容类型                     |
+| `Accept-Encoding` | 支持的压缩方式（gzip、br）                |
+| `Authorization`   | 认证信息（Bearer Token / Basic Auth） |
+| `Cookie`          | 携带 Cookie                       |
+| `Range`           | 请求部分内容（断点续传）                    |
+| `If-None-Match`   | 协商缓存，与 ETag 配合                  |
+
+### 响应头（常用）
+
+| 字段                 | 说明            |
+| ------------------ | ------------- |
+| `Content-Type`     | 响应数据类型（MIME）  |
+| `Content-Length`   | 响应体字节数        |
+| `Content-Encoding` | 压缩方式          |
+| `Set-Cookie`       | 在客户端设置 Cookie |
+| `Location`         | 重定向目标地址       |
+| `ETag`             | 资源版本标识        |
+| `Cache-Control`    | 缓存策略          |
+
+> 完整字段详见 [[HTTP常见字段]]
+
+---
+
+## 六、缓存机制
+
+```
+首次请求 → 服务器返回资源 + 缓存策略头部
+                │
+         ┌──────┴──────┐
+      强缓存          协商缓存
+  Cache-Control      ETag + If-None-Match
+   max-age=xxx    Last-Modified + If-Modified-Since
+         │                   │
+   未过期：直接用        向服务器验证
+   200 (from cache)    ├── 未变化 → 304（用缓存）
+                       └── 已变化 → 200（返回新内容）
+```
+
+---
+
+## 七、HTTP 版本演进
+
+| 版本      | 年份   | 核心改进                   | 遗留问题        |
+| ------- | ---- | ---------------------- | ----------- |
+| **0.9** | 1991 | 仅支持 GET，无 Header       | —           |
+| **1.0** | 1996 | Header、状态码、多方法         | 短连接，每次建 TCP |
+| **1.1** | 1997 | 持久连接、管线化、分块传输          | 应用层队头阻塞     |
+| **2**   | 2015 | 二进制帧、多路复用、头部压缩         | TCP 层队头阻塞   |
+| **3**   | 2022 | 基于 QUIC/UDP，0-RTT，连接迁移 | —           |
+
+> 详见 [[HTTP版本演进]] · [[HTTP1.1~HTTP2~HTTP3]]
+
+---
+
+## 八、HTTP vs HTTPS
+
+|          | HTTP | HTTPS      |
+| -------- | ---- | ---------- |
+| **传输**   | 明文   | 加密（TLS）    |
+| **端口**   | 80   | 443        |
+| **身份验证** | ❌    | ✅（CA 数字证书） |
+| **完整性**  | ❌    | ✅（摘要算法）    |
+| **证书**   | 不需要  | 需要         |
+
+**HTTPS 三大保障：**
+- **加密**：混合加密（非对称协商 → 对称传输）
+- **防篡改**：摘要算法（SHA-256）
+- **身份验证**：CA 颁发的数字证书
+
+**TLS 1.2 握手（简化）：**
+```
+Client Hello  →  Server Hello + 证书
+              ←
+验证证书 + 发送预主密钥（公钥加密）  →
+              ←  双方计算会话密钥，握手完成
+加密通信开始 ...
+```
+
+> 详见 [[HTTP与HTTPS的区别]]
+
+---
+
+## 九、相关对比专题
+
+- [[Get和Post区别]] — GET 与 POST 的语义、安全性、幂等性区别
+- [[HTTP与websocket的区别]] — 全双工实时通信 vs 请求-响应模式
+- [[HTTP与RPC的区别]] — 服务发现、序列化格式、适用场景对比

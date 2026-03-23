@@ -1,0 +1,19 @@
+{
+  "id": "conv-1772937787755-ydrihce4s",
+  "title": "# DeepWiki Q&A with Code Context for Repository: c...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1772937787755,
+  "updatedAt": 1773024853330,
+  "lastResponseAt": 1772937873791,
+  "sessionId": "be89db61-2ca7-459a-855c-69ee17d36fca",
+  "sdkSessionId": "be89db61-2ca7-459a-855c-69ee17d36fca",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 3063,
+    "cacheReadInputTokens": 42882,
+    "contextWindow": 200000,
+    "contextTokens": 45946,
+    "percentage": 23
+  }
+}

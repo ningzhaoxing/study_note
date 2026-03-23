@@ -3,18 +3,18 @@
   "title": "@学习中心/01-技术栈/算法与数据结构/力扣/二叉树/ 该目录主要是用于学习二叉树这个数据结构以及...",
   "titleGenerationStatus": "failed",
   "createdAt": 1772708206046,
-  "updatedAt": 1772709518201,
-  "lastResponseAt": 1772709518200,
-  "sessionId": "dc5d779e-e543-4028-b682-702f24e6ba56",
+  "updatedAt": 1772723361842,
+  "lastResponseAt": 1772709898979,
+  "sessionId": null,
   "sdkSessionId": "dc5d779e-e543-4028-b682-702f24e6ba56",
   "currentNote": "学习中心/01-技术栈/算法与数据结构/力扣/链表/00-核心思维框架.md",
   "usage": {
     "model": "sonnet",
     "inputTokens": 1,
-    "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 68502,
+    "cacheCreationInputTokens": 6735,
+    "cacheReadInputTokens": 71138,
     "contextWindow": 200000,
-    "contextTokens": 68503,
-    "percentage": 34
+    "contextTokens": 77874,
+    "percentage": 39
   }
 }

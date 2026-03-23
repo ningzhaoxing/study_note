@@ -1,0 +1,20 @@
+{
+  "id": "conv-1772723381398-4t0yrne2h",
+  "title": "该文档中的图或代码用 plantuml 表示",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1772723381399,
+  "updatedAt": 1772759397023,
+  "lastResponseAt": 1772724982512,
+  "sessionId": null,
+  "sdkSessionId": "4ed59eee-ab10-4004-a648-a8bee1f3b6c2",
+  "currentNote": "工作/Agent 工程/报告导出 Agent/报告导出 MVP 实现文档.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 3969,
+    "cacheReadInputTokens": 57832,
+    "contextWindow": 200000,
+    "contextTokens": 61802,
+    "percentage": 31
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "conv-1772759411440-ab7ay4742",
+  "title": "格式修改下，使其可读性更强一些",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1772759411441,
+  "updatedAt": 1772762265867,
+  "lastResponseAt": 1772760146821,
+  "sessionId": null,
+  "sdkSessionId": "f6c468b3-dbcd-456f-85d8-5602c001c938",
+  "currentNote": "工作/Agent 工程/报告导出 Agent/报告导出 MVP 排期.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 5776,
+    "cacheReadInputTokens": 49123,
+    "contextWindow": 200000,
+    "contextTokens": 54900,
+    "percentage": 27
+  }
+}

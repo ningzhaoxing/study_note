@@ -5,7 +5,7 @@
   "createdAt": 1772505142889,
   "updatedAt": 1772709694807,
   "lastResponseAt": 1772542695980,
-  "sessionId": "67a4219e-1c7a-4494-a43e-d389f1c69544",
+  "sessionId": null,
   "sdkSessionId": "67a4219e-1c7a-4494-a43e-d389f1c69544",
   "currentNote": "工作/Agent 工程/Skill/Agent 架构重构方案：从 Tool 到 Skill.md",
   "usage": {

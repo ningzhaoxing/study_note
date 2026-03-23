@@ -1,0 +1,20 @@
+{
+  "id": "conv-1773145460227-mc0wdy9cg",
+  "title": "看下该文档还有 TCP 的哪些知识点没考虑到",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1773145460228,
+  "updatedAt": 1773735177152,
+  "lastResponseAt": 1773371980320,
+  "sessionId": "7953cd21-53aa-495a-bc60-495fb39e910a",
+  "sdkSessionId": "7953cd21-53aa-495a-bc60-495fb39e910a",
+  "currentNote": "学习中心/01-技术栈/计算机网络/TCP-UDP/TCP 拥塞控制和握手.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 3,
+    "cacheCreationInputTokens": 87943,
+    "cacheReadInputTokens": 13903,
+    "contextWindow": 200000,
+    "contextTokens": 101849,
+    "percentage": 51
+  }
+}
