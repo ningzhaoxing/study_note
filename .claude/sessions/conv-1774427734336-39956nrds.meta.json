@@ -1,0 +1,20 @@
+{
+  "id": "conv-1774427734336-39956nrds",
+  "title": "根据当前目录下的其他几篇简书文章的风格作为参考，将当前这篇文章写成我的笔记，以及起一个合适的标题",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1774427734337,
+  "updatedAt": 1774490965401,
+  "lastResponseAt": 1774431426778,
+  "sessionId": "cabf4c8a-817d-4e81-b0b5-b96451c56f8a",
+  "sdkSessionId": "cabf4c8a-817d-4e81-b0b5-b96451c56f8a",
+  "currentNote": "个人认知体系/简书/未命名.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 3723,
+    "cacheReadInputTokens": 85048,
+    "contextWindow": 200000,
+    "contextTokens": 88772,
+    "percentage": 44
+  }
+}
