@@ -1,0 +1,19 @@
+{
+  "id": "conv-1774700456785-d99wh3wh0",
+  "title": "补全下选中的",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1774700456788,
+  "updatedAt": 1775014403257,
+  "lastResponseAt": 1774942087915,
+  "sessionId": "222733ab-7760-4ffa-b1b5-6b638e45dd18",
+  "sdkSessionId": "222733ab-7760-4ffa-b1b5-6b638e45dd18",
+  "usage": {
+    "model": "opus",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0
+  }
+}

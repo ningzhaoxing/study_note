@@ -1,0 +1,20 @@
+{
+  "id": "conv-1774683518529-jw5gd2xbm",
+  "title": "https://www",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1774683518530,
+  "updatedAt": 1774689513845,
+  "lastResponseAt": 1774689513845,
+  "sessionId": "bfc957b0-f926-43fb-8744-151c1bd96432",
+  "sdkSessionId": "bfc957b0-f926-43fb-8744-151c1bd96432",
+  "currentNote": "学习中心/01-技术栈/AI/Agent/Harness Engineering.md",
+  "usage": {
+    "model": "opus",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 1059,
+    "cacheReadInputTokens": 57057,
+    "contextWindow": 200000,
+    "contextTokens": 58117,
+    "percentage": 29
+  }
+}

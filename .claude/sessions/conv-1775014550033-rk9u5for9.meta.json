@@ -1,0 +1,19 @@
+{
+  "id": "conv-1775014550033-rk9u5for9",
+  "title": "我觉得现在的目录层级和复杂度太高了，我觉得工作和学习可以不隔离分开了，学习即是工作、工作即是学习。另...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1775014550034,
+  "updatedAt": 1775034815711,
+  "lastResponseAt": 1775034815711,
+  "sessionId": "34016d7f-1b3d-4d14-8cf3-490a16d318fd",
+  "sdkSessionId": "34016d7f-1b3d-4d14-8cf3-490a16d318fd",
+  "usage": {
+    "model": "opus",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 435,
+    "cacheReadInputTokens": 83533,
+    "contextWindow": 200000,
+    "contextTokens": 83969,
+    "percentage": 42
+  }
+}

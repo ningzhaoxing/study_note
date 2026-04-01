@@ -3,18 +3,18 @@
   "title": "感觉这篇文章写的怎么样",
   "titleGenerationStatus": "failed",
   "createdAt": 1774490974522,
-  "updatedAt": 1774491418268,
-  "lastResponseAt": 1774491418268,
+  "updatedAt": 1774491735317,
+  "lastResponseAt": 1774491735317,
   "sessionId": "b88edb15-6058-43a9-980b-603e6725afac",
   "sdkSessionId": "b88edb15-6058-43a9-980b-603e6725afac",
   "currentNote": "个人认知体系/简书/科学发展所带来的技术焦虑.md",
   "usage": {
     "model": "sonnet",
-    "inputTokens": 3,
-    "cacheCreationInputTokens": 1104,
-    "cacheReadInputTokens": 29268,
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 114,
+    "cacheReadInputTokens": 38485,
     "contextWindow": 200000,
-    "contextTokens": 30375,
-    "percentage": 15
+    "contextTokens": 38600,
+    "percentage": 19
   }
 }

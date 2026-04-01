@@ -1,0 +1,20 @@
+{
+  "id": "conv-1774513390393-pullzsmzo",
+  "title": "该目录会记录我的一些日常所思所想，就像荣格自传那样，有很多自己内心和思想的思考和记录。我希望将其记录...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1774513390394,
+  "updatedAt": 1774683499715,
+  "lastResponseAt": 1774600887660,
+  "sessionId": "ab3919e4-0883-4398-8bf9-e5a6611a507e",
+  "sdkSessionId": "ab3919e4-0883-4398-8bf9-e5a6611a507e",
+  "currentNote": "个人认知体系/心理日志/日记/2026.03.26.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0
+  }
+}

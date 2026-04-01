@@ -8,31 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a2c15955fc93e1a5",
+            "id": "20ff1c944466fc3e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习中心/01-技术栈/Go语言/基础语法/HashTrie详细教程.md",
+                "file": "后端工程/沉淀与输出/问题记录/qs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HashTrie详细教程"
+              "title": "qs"
             }
           },
           {
-            "id": "fccfa0c0118296f2",
+            "id": "622e69559920d307",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "个人认知体系/简书/科学发展所带来的技术焦虑.md",
+                "file": "AI Agent/Agent 架构/Agent能力体系-工具抽象.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "科学发展所带来的技术焦虑"
+              "title": "Agent能力体系-工具抽象"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "报告导出",
+                "query": "harness",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 327
+    "width": 427
   },
   "right": {
     "id": "efee4d861134be2e",
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习中心/02-项目实践/个人项目/灵码云/codeRunner-server 方案设计.md",
+                "file": "AI Agent/Agent 架构/Agent能力体系-工具抽象.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "codeRunner-server 方案设计 的大纲"
+              "title": "Agent能力体系-工具抽象 的大纲"
             }
           },
           {
@@ -223,7 +223,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 602
+    "width": 648
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -240,63 +240,62 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "fccfa0c0118296f2",
+  "active": "622e69559920d307",
   "lastOpenFiles": [
-    "个人认知体系/简书/从 AI+ 到 AI Native.md",
-    "个人认知体系/简书/未命名.md",
-    "个人认知体系/简书/备份.md",
-    "个人认知体系/简书/科学发展所带来的技术焦虑.md",
-    "个人认知体系/简书/那个从来没被允许存在的自己.md",
-    "个人认知体系/简书/停下来，不是失败——张雪峰给我的最后一课.md",
-    "个人认知体系/简书/选择越多是越幸福还是越痛苦？.md",
-    "个人认知体系/简书/所求良知.md",
-    "个人认知体系/心得/AI Coding 使用心得.md",
-    "个人认知体系/精神分析/日记/2026.03.23.md",
-    "个人认知体系/简书/2025-10-28.md",
-    "个人认知体系/简书/2025年小结.md",
-    "个人认知体系/简书/是对错还是因果.md",
-    "学习中心/03-面试准备/面经整理/Go面经/go_map.md",
-    "个人认知体系/简书",
-    "学习中心/03-面试准备/面经整理/Go面经/gmp调度模型.md",
-    "学习中心/03-面试准备/面经整理/Go面经/内存逃逸.md",
-    "学习中心/03-面试准备/面经整理/Go面经/内存管理图.md",
-    "学习中心/03-面试准备/面经整理/Go面经/v1.5三色标记法.md",
-    "学习中心/03-面试准备/面经整理/Go面经/v1.3版本之前的标记清除法.md",
-    "学习中心/01-技术栈/数据库/MySQL/MySQL索引.md",
-    "学习中心/03-面试准备/面试知识索引.md",
-    "学习中心/01-技术栈/系统设计/AI-Agent/Agent设计范式.md",
-    "学习中心/03-面试准备/README.md",
-    "学习中心/03-面试准备/简历.md",
-    "学习中心/03-面试准备/面经整理/网络面经/什么是HTTP.md",
-    "学习中心/03-面试准备/面经整理/系统设计面经/通用分布式系统设计.md",
-    "个人认知体系/心得",
-    "学习中心/02-项目实践/实习项目/字节跳动-飞书",
-    "学习中心/02-项目实践/实习项目/思格涡-AIcanTARA",
-    "学习中心/02-项目实践/实习项目",
-    "个人认知体系/精神分析/日记",
-    "个人认知体系/精神分析",
-    "个人认知体系/未命名.base",
-    "学习中心/01-技术栈/系统设计/AI-Agent",
-    "简历和面试",
-    "学习中心/资源/图片/app-arch.png",
-    "学习中心/资源/计算机网络/TCP相关2.png",
+    "AI Agent/Agent 架构/Agent设计范式.md",
+    "AI Agent/工具与框架/Eino ADK/Eino框架实践.md",
+    "AI Agent/工具与框架/Eino ADK",
+    "AI Agent/沉淀与输出/写作/AI 新时代的 SDD.md",
+    "AI Agent/Agent 架构/Agent能力体系-工具抽象.md",
+    "AI Agent/沉淀与输出/写作/一文吃透 ReAct Agent：AI 任务规划与执行的闭环设计思路.md",
+    "AI Agent/Agent 架构/Agent-Memory设计.md",
+    "AI Agent/Agent 架构/未命名.md",
+    "AI Agent/调研/AI_是怎么思考的.md",
+    "面试/面试项目/飞书集成平台 AnyCross 简历优化分析报告.md",
+    "面试/面试项目/飞书集成平台（AnyCross）技术调研报告.md",
+    "面试/面试项目",
+    "AI Agent/调研/Harness Engineer ：上下文即真相.md",
+    "AI Agent/调研/Harness Engineering：当 Agent 工程有了自己的名字.md",
+    "AI Agent/大模型/各厂商基座模型调研.md",
+    "AI Agent/沉淀与输出/写作/obsidian + claudian 打造 AI 智能个人知识库.md",
+    "AI Agent/沉淀与输出/AI 学习框架.md",
+    "AI Agent/沉淀与输出/AI Coding 使用心得.md",
+    "AI Agent/沉淀与输出/Agent 解决实际问题的经验.md",
+    "日志/学习计划/Go考核_Go进阶考核内容.md",
+    "日志/心得/商业思维/第三章._争议与挑战.md",
+    "日志/心得/商业思维/梦想落地.md",
+    "日志/心得/商业思维/一个程序员的求索.md",
+    "日志/实习日志/字节实习/object-design-style-guide.md",
+    "日志/实习日志/字节实习/acton调用链路信息存储设计.md",
+    "日志/分享/所求良知.md",
+    "日志/分享/选择越多是越幸福还是越痛苦？.md",
+    "后端工程/系统设计/微服务/RPC",
+    "后端工程/系统设计/微服务/assets",
+    "后端工程/Go语言/底层原理",
+    "后端工程/Go语言/并发编程/goroutine",
+    "后端工程/Go语言/标准库/os 和 bufio 包",
+    "后端工程/Go语言/标准库/context",
+    "后端工程/Go语言/标准库/网络编程",
+    "后端工程/Go语言/并发编程/sync 包",
+    "资源/图片/app-arch.png",
+    "资源/图片/QQ_1749803350528.png",
+    "资源/图片/QQ_1749803312844.png",
+    "资源/图片/Pasted image 20250810183606.png",
+    "资源/图片/Pasted image 20250701105846.png",
+    "资源/图片/5da67ad7e6680d66ea074c05f96ccef8.jpg",
+    "资源/其他/HTTPS.canvas",
+    "资源/其他/DNS域名解析过程.canvas",
+    "资源/计算机网络/Pasted image 20250307084624.png",
+    "资源/计算机网络/TCP相关2.png",
+    "资源/计算机网络/Pasted image 20250307084630.png",
+    "资源/计算机网络/Pasted image 20250307084636.png",
     "学习中心/资源/其他/HTTPS.canvas",
     "学习中心/资源/其他/DNS域名解析过程.canvas",
-    "学习中心/资源/图片/QQ_1749803312844.png",
-    "学习中心/资源/图片/QQ_1749803350528.png",
-    "学习中心/资源/图片/Pasted image 20250810183606.png",
-    "学习中心/资源/图片/Pasted image 20250701105846.png",
-    "学习中心/01-技术栈/计算机网络/TCP-UDP/assets/TCP三次握手.png",
-    "学习中心/资源/计算机网络/Pasted image 20250307084636.png",
-    "学习中心/资源/计算机网络/Pasted image 20250307084630.png",
-    "学习中心/资源/计算机网络/Pasted image 20250307084624.png",
     "秋招/计网面经/HTTP篇/HTTPS.canvas",
     "秋招/计网面经/应用层/DNS域名解析过程.canvas",
     "学习笔记/学习/面试积淀/技术面/场景题/用户限流分布式系统.canvas",
     "学习笔记/学习/面试积淀/技术面/计网面经/HTTP篇/HTTPS.canvas",
     "学习笔记/学习/面试积淀/技术面/计网面经/应用层/DNS域名解析过程.canvas",
-    "学习笔记/学习/面试积淀/技术面/中间件原理/mysql/思维导图/事物.canvas",
-    "学习笔记/学习/面试积淀/技术面/中间件原理/mysql/思维导图/MVCC.canvas",
-    "学习笔记/学习/面试积淀/技术面/中间件原理/mysql/思维导图/mysql.canvas"
+    "学习笔记/学习/面试积淀/技术面/中间件原理/mysql/思维导图/事物.canvas"
   ]
 }
