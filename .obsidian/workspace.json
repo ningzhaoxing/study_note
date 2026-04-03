@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI Agent/调研/02-claude code上下文管理系统深度研究.md",
+                "file": "AI Agent/调研/05-人机协作交互模式深度研究.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02-claude code上下文管理系统深度研究"
+              "title": "05-人机协作交互模式深度研究"
             }
           }
         ],
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI Agent/调研/02-claude code上下文管理系统深度研究.md",
+                "file": "AI Agent/调研/05-人机协作交互模式深度研究.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "02-claude code上下文管理系统深度研究 的大纲"
+              "title": "05-人机协作交互模式深度研究 的大纲"
             }
           },
           {
@@ -233,7 +233,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -256,14 +256,15 @@
   },
   "active": "d33f3b4c9896e8dc",
   "lastOpenFiles": [
+    "AI Agent/调研/03-claude code Sub-Agent系统设计深度研究.md",
+    "AI Agent/调研/02-claude code上下文管理系统深度研究.md",
+    "AI Agent/沉淀与输出/写作/AI 新时代的 SDD：上下文即真理与驾驭工程.md",
+    "AI Agent/调研/Harness Engineer ：上下文即真相.md",
     "AI Agent/调研/01-claude code工具体系设计与查询类工具深度研究.md",
     "日志/学习计划/Go考核_Go进阶考核内容.md",
     "日志/心灵日志/日记/2026.03.26.md",
-    "AI Agent/沉淀与输出/写作/AI 新时代的 SDD：上下文即真理与驾驭工程.md",
     "AI Agent/沉淀与输出/写作/Claude code 源码：Embedding 和 Agentic Search.md",
     "AI Agent/调研/05-人机协作交互模式深度研究.md",
-    "AI Agent/调研/03-claude code Sub-Agent系统设计深度研究.md",
-    "AI Agent/调研/02-claude code上下文管理系统深度研究.md",
     "AI Agent/调研/04-Agent Loop核心循环机制深度研究：为何Claude Code的执行效率远超同类框架.md",
     "AI Agent/调研/06-权限与信任渐进体系深度研究.md",
     "AI Agent/调研/会议纪要 4.1.md",
@@ -284,7 +285,6 @@
     "AI Agent/Agent 架构/Agent设计范式.md",
     "AI Agent/工具与框架/Eino ADK/Eino框架实践.md",
     "AI Agent/工具与框架/Eino ADK",
-    "AI Agent/沉淀与输出/写作/一文吃透 ReAct Agent：AI 任务规划与执行的闭环设计思路.md",
     "面试/面试项目",
     "后端工程/系统设计/微服务/RPC",
     "后端工程/系统设计/微服务/assets",
