@@ -43,7 +43,6 @@
   "thinkingBudget": "medium",
   "enableAutoTitleGeneration": true,
   "titleGenerationModel": "",
-  "show1MModel": false,
   "enableChrome": false,
   "enableBangBash": false,
   "excludedTags": [],

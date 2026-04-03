@@ -1,0 +1,20 @@
+{
+  "id": "conv-1775199872444-f3ewh41fp",
+  "title": "可以根据我的这些思考些一篇文章，这虽然分成了三点但其实是贯穿着，不是独立分割的流程。可以参考 @AI...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1775199872445,
+  "updatedAt": 1775202072772,
+  "lastResponseAt": 1775202072772,
+  "sessionId": "9671f2a1-09e3-4b34-be00-43632029d7c5",
+  "sdkSessionId": "9671f2a1-09e3-4b34-be00-43632029d7c5",
+  "currentNote": "AI Agent/沉淀与输出/写作/AI 新时代的 SDD & 上下文即真理 & Harness Engineering.md",
+  "usage": {
+    "model": "opus",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 4345,
+    "cacheReadInputTokens": 141128,
+    "contextWindow": 200000,
+    "contextTokens": 145474,
+    "percentage": 73
+  }
+}
